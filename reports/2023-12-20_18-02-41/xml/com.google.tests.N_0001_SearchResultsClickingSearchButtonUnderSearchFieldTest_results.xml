@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="All-tests [Firefox]"
+           tests="2"
+           failures="1"
+           errors="0"
+           skipped="1"
+           time="1.875">
+  <properties />
+            <testcase name="searchResultsClickingSearchButtonUnderSearchField" time="0.698" classname="com.google.tests.N_0001_SearchResultsClickingSearchButtonUnderSearchFieldTest">
+                <failure type="org.openqa.selenium.ElementClickInterceptedException"
+                  message="Element &lt;input class=&quot;gNO89b&quot; name=&quot;btnK&quot; type=&quot;submit&quot;&gt; is not clickable at point (884,471) because another element &lt;span&gt; obscures it
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [63d7990f-36f6-478c-a71a-53a90d84d45e, clickElement {id=e7a207af-5cb4-4837-9f70-c61462d37aab}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0, moz:accessibilityChecks: false, moz:buildID: 20231211174248, moz:debuggerAddress: 127.0.0.1:13548, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 14852, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:13548/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on windows (63d7990f-36f6-478c-a71a-53a90d84d45e)] -&gt; css selector: center:nth-child(1) &gt; input:nth-child(1)]
+Session ID: 63d7990f-36f6-478c-a71a-53a90d84d45e"
+              >
+<![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <input class="gNO89b" name="btnK" type="submit"> is not clickable at point (884,471) because another element <span> obscures it
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [63d7990f-36f6-478c-a71a-53a90d84d45e, clickElement {id=e7a207af-5cb4-4837-9f70-c61462d37aab}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0, moz:accessibilityChecks: false, moz:buildID: 20231211174248, moz:debuggerAddress: 127.0.0.1:13548, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 14852, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:13548/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on windows (63d7990f-36f6-478c-a71a-53a90d84d45e)] -> css selector: center:nth-child(1) > input:nth-child(1)]
+Session ID: 63d7990f-36f6-478c-a71a-53a90d84d45e
+  java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+  java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+  java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+  org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+  org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+  org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+  org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+  org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  java.base/java.lang.reflect.Method.invoke(Method.java:580)
+  org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:375)
+  jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+  org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:387)
+  com.google.pages.BasePage.actionClickElement(BasePage.java:43)
+  com.google.pages.GoogleMainPage.clickSearchButtonUnderSearchFieldWhenSearchFieldIsFilled(GoogleMainPage.java:40)
+  com.google.tests.N_0001_SearchResultsClickingSearchButtonUnderSearchFieldTest.searchResultsClickingSearchButtonUnderSearchField(N_0001_SearchResultsClickingSearchButtonUnderSearchFieldTest.java:16)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  java.base/java.lang.reflect.Method.invoke(Method.java:580)
+  org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+  org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+  org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+  org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+  org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+  org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+  org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+  org.testng.TestRunner.privateRun(TestRunner.java:829)
+  org.testng.TestRunner.run(TestRunner.java:602)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+  org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+  java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+  java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+  java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+  java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+      </failure>
+
+          </testcase>
+  
+            <testcase name="searchResultsClickingSearchButtonUnderSearchField" time="0.0" classname="com.google.tests.N_0001_SearchResultsClickingSearchButtonUnderSearchFieldTest">
+          <skipped />
+    </testcase>
+  
+  
+</testsuite>

@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="33.541" tests="13" errors="0" skipped="1" failures="1">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="webdriver.chrome.driver" value="src/test/resources/chromedriver.exe"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="org.uncommons.reportng.escape-output" value="false"/>
+    <property name="java.class.path" value="D:\QA\MyProjestsNew\com.google\target\test-classes;D:\QA\MyProjestsNew\com.google\target\classes;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-java\4.13.0\selenium-java-4.13.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-api\4.13.0\selenium-api-4.13.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.13.0\selenium-chrome-driver-4.13.0.jar;C:\Users\Admin\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.13.0\selenium-chromium-driver-4.13.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-json\4.13.0\selenium-json-4.13.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.13.0\selenium-manager-4.13.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v115\4.13.0\selenium-devtools-v115-4.13.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v116\4.13.0\selenium-devtools-v116-4.13.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v117\4.13.0\selenium-devtools-v117-4.13.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.13.0\selenium-devtools-v85-4.13.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.13.0\selenium-edge-driver-4.13.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.13.0\selenium-firefox-driver-4.13.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-http\4.13.0\selenium-http-4.13.0.jar;C:\Users\Admin\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.13.0\selenium-ie-driver-4.13.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.13.0\selenium-remote-driver-4.13.0.jar;C:\Users\Admin\.m2\repository\io\netty\netty-buffer\4.1.96.Final\netty-buffer-4.1.96.Final.jar;C:\Users\Admin\.m2\repository\io\netty\netty-codec-http\4.1.96.Final\netty-codec-http-4.1.96.Final.jar;C:\Users\Admin\.m2\repository\io\netty\netty-codec\4.1.96.Final\netty-codec-4.1.96.Final.jar;C:\Users\Admin\.m2\repository\io\netty\netty-handler\4.1.96.Final\netty-handler-4.1.96.Final.jar;C:\Users\Admin\.m2\repository\io\netty\netty-common\4.1.96.Final\netty-common-4.1.96.Final.jar;C:\Users\Admin\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.96.Final\netty-transport-classes-epoll-4.1.96.Final.jar;C:\Users\Admin\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.96.Final\netty-transport-classes-kqueue-4.1.96.Final.jar;C:\Users\Admin\.m2\repository\io\netty\netty-transport-native-epoll\4.1.96.Final\netty-transport-native-epoll-4.1.96.Final.jar;C:\Users\Admin\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.96.Final\netty-transport-native-kqueue-4.1.96.Final.jar;C:\Users\Admin\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.96.Final\netty-transport-native-unix-common-4.1.96.Final.jar;C:\Users\Admin\.m2\repository\io\netty\netty-transport\4.1.96.Final\netty-transport-4.1.96.Final.jar;C:\Users\Admin\.m2\repository\io\netty\netty-resolver\4.1.96.Final\netty-resolver-4.1.96.Final.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-api\1.28.0\opentelemetry-api-1.28.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-context\1.28.0\opentelemetry-context-1.28.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.28.0\opentelemetry-exporter-logging-1.28.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.28.0\opentelemetry-sdk-metrics-1.28.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.28.0-alpha\opentelemetry-extension-incubator-1.28.0-alpha.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.28.0\opentelemetry-sdk-logs-1.28.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.28.0\opentelemetry-sdk-common-1.28.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.28.0\opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.28.0\opentelemetry-sdk-extension-autoconfigure-1.28.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.28.0-alpha\opentelemetry-api-events-1.28.0-alpha.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.28.0\opentelemetry-sdk-trace-1.28.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.28.0\opentelemetry-sdk-1.28.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\Admin\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\Admin\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\Admin\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\Admin\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\Admin\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\Admin\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\Admin\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\Admin\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\Admin\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-os\4.13.0\selenium-os-4.13.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.13.0\selenium-safari-driver-4.13.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-support\4.13.0\selenium-support-4.13.0.jar;C:\Users\Admin\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar;C:\Users\Admin\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Admin\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Admin\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\Admin\.m2\repository\org\uncommons\reportng\1.1.4\reportng-1.1.4.jar;C:\Users\Admin\.m2\repository\velocity\velocity\1.4\velocity-1.4.jar;C:\Users\Admin\.m2\repository\velocity\velocity-dep\1.4\velocity-dep-1.4.jar;C:\Users\Admin\.m2\repository\org\apache\velocity\velocity\1.7\velocity-1.7.jar;C:\Users\Admin\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar;C:\Users\Admin\.m2\repository\commons-lang\commons-lang\2.4\commons-lang-2.4.jar;C:\Users\Admin\.m2\repository\com\google\inject\guice\7.0.0\guice-7.0.0.jar;C:\Users\Admin\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\Admin\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\Admin\.m2\repository\com\google\guava\guava\31.0.1-jre\guava-31.0.1-jre.jar;C:\Users\Admin\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Admin\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Admin\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Admin\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\Admin\.m2\repository\com\google\errorprone\error_prone_annotations\2.7.1\error_prone_annotations-2.7.1.jar;C:\Users\Admin\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-project\2.2.1\maven-project-2.2.1.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-settings\2.2.1\maven-settings-2.2.1.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-profile\2.2.1\maven-profile-2.2.1.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-model\2.2.1\maven-model-2.2.1.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-artifact-manager\2.2.1\maven-artifact-manager-2.2.1.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-repository-metadata\2.2.1\maven-repository-metadata-2.2.1.jar;C:\Users\Admin\.m2\repository\org\apache\maven\wagon\wagon-provider-api\1.0-beta-6\wagon-provider-api-1.0-beta-6.jar;C:\Users\Admin\.m2\repository\backport-util-concurrent\backport-util-concurrent\3.1\backport-util-concurrent-3.1.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-plugin-registry\2.2.1\maven-plugin-registry-2.2.1.jar;C:\Users\Admin\.m2\repository\org\codehaus\plexus\plexus-interpolation\1.11\plexus-interpolation-1.11.jar;C:\Users\Admin\.m2\repository\org\codehaus\plexus\plexus-utils\1.5.15\plexus-utils-1.5.15.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-artifact\2.2.1\maven-artifact-2.2.1.jar;C:\Users\Admin\.m2\repository\org\codehaus\plexus\plexus-container-default\1.0-alpha-9-stable-1\plexus-container-default-1.0-alpha-9-stable-1.jar;C:\Users\Admin\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\Users\Admin\.m2\repository\classworlds\classworlds\1.1-alpha-2\classworlds-1.1-alpha-2.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\Admin\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\Admin\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Admin\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\Admin\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Kiev"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
+    <property name="sun.java.command" value="C:\Users\Admin\AppData\Local\Temp\surefire13865395730234579735\surefirebooter-20231220175114092_3.jar C:\Users\Admin\AppData\Local\Temp\surefire13865395730234579735 2023-12-20T17-51-12_468-jvmRun1 surefire-20231220175114092_1tmp surefire_0-20231220175114092_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\QA\MyProjestsNew\com.google\target\test-classes;D:\QA\MyProjestsNew\com.google\target\classes;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-java\4.13.0\selenium-java-4.13.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-api\4.13.0\selenium-api-4.13.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.13.0\selenium-chrome-driver-4.13.0.jar;C:\Users\Admin\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.13.0\selenium-chromium-driver-4.13.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-json\4.13.0\selenium-json-4.13.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.13.0\selenium-manager-4.13.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v115\4.13.0\selenium-devtools-v115-4.13.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v116\4.13.0\selenium-devtools-v116-4.13.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v117\4.13.0\selenium-devtools-v117-4.13.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.13.0\selenium-devtools-v85-4.13.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.13.0\selenium-edge-driver-4.13.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.13.0\selenium-firefox-driver-4.13.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-http\4.13.0\selenium-http-4.13.0.jar;C:\Users\Admin\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.13.0\selenium-ie-driver-4.13.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.13.0\selenium-remote-driver-4.13.0.jar;C:\Users\Admin\.m2\repository\io\netty\netty-buffer\4.1.96.Final\netty-buffer-4.1.96.Final.jar;C:\Users\Admin\.m2\repository\io\netty\netty-codec-http\4.1.96.Final\netty-codec-http-4.1.96.Final.jar;C:\Users\Admin\.m2\repository\io\netty\netty-codec\4.1.96.Final\netty-codec-4.1.96.Final.jar;C:\Users\Admin\.m2\repository\io\netty\netty-handler\4.1.96.Final\netty-handler-4.1.96.Final.jar;C:\Users\Admin\.m2\repository\io\netty\netty-common\4.1.96.Final\netty-common-4.1.96.Final.jar;C:\Users\Admin\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.96.Final\netty-transport-classes-epoll-4.1.96.Final.jar;C:\Users\Admin\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.96.Final\netty-transport-classes-kqueue-4.1.96.Final.jar;C:\Users\Admin\.m2\repository\io\netty\netty-transport-native-epoll\4.1.96.Final\netty-transport-native-epoll-4.1.96.Final.jar;C:\Users\Admin\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.96.Final\netty-transport-native-kqueue-4.1.96.Final.jar;C:\Users\Admin\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.96.Final\netty-transport-native-unix-common-4.1.96.Final.jar;C:\Users\Admin\.m2\repository\io\netty\netty-transport\4.1.96.Final\netty-transport-4.1.96.Final.jar;C:\Users\Admin\.m2\repository\io\netty\netty-resolver\4.1.96.Final\netty-resolver-4.1.96.Final.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-api\1.28.0\opentelemetry-api-1.28.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-context\1.28.0\opentelemetry-context-1.28.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.28.0\opentelemetry-exporter-logging-1.28.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.28.0\opentelemetry-sdk-metrics-1.28.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.28.0-alpha\opentelemetry-extension-incubator-1.28.0-alpha.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.28.0\opentelemetry-sdk-logs-1.28.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.28.0\opentelemetry-sdk-common-1.28.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.28.0\opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.28.0\opentelemetry-sdk-extension-autoconfigure-1.28.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.28.0-alpha\opentelemetry-api-events-1.28.0-alpha.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.28.0\opentelemetry-sdk-trace-1.28.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.28.0\opentelemetry-sdk-1.28.0.jar;C:\Users\Admin\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\Admin\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\Admin\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\Admin\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\Admin\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\Admin\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\Admin\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\Admin\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\Admin\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\Admin\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-os\4.13.0\selenium-os-4.13.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.13.0\selenium-safari-driver-4.13.0.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-support\4.13.0\selenium-support-4.13.0.jar;C:\Users\Admin\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar;C:\Users\Admin\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Admin\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Admin\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\Admin\.m2\repository\org\uncommons\reportng\1.1.4\reportng-1.1.4.jar;C:\Users\Admin\.m2\repository\velocity\velocity\1.4\velocity-1.4.jar;C:\Users\Admin\.m2\repository\velocity\velocity-dep\1.4\velocity-dep-1.4.jar;C:\Users\Admin\.m2\repository\org\apache\velocity\velocity\1.7\velocity-1.7.jar;C:\Users\Admin\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar;C:\Users\Admin\.m2\repository\commons-lang\commons-lang\2.4\commons-lang-2.4.jar;C:\Users\Admin\.m2\repository\com\google\inject\guice\7.0.0\guice-7.0.0.jar;C:\Users\Admin\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\Admin\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\Admin\.m2\repository\com\google\guava\guava\31.0.1-jre\guava-31.0.1-jre.jar;C:\Users\Admin\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Admin\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Admin\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Admin\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\Admin\.m2\repository\com\google\errorprone\error_prone_annotations\2.7.1\error_prone_annotations-2.7.1.jar;C:\Users\Admin\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-project\2.2.1\maven-project-2.2.1.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-settings\2.2.1\maven-settings-2.2.1.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-profile\2.2.1\maven-profile-2.2.1.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-model\2.2.1\maven-model-2.2.1.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-artifact-manager\2.2.1\maven-artifact-manager-2.2.1.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-repository-metadata\2.2.1\maven-repository-metadata-2.2.1.jar;C:\Users\Admin\.m2\repository\org\apache\maven\wagon\wagon-provider-api\1.0-beta-6\wagon-provider-api-1.0-beta-6.jar;C:\Users\Admin\.m2\repository\backport-util-concurrent\backport-util-concurrent\3.1\backport-util-concurrent-3.1.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-plugin-registry\2.2.1\maven-plugin-registry-2.2.1.jar;C:\Users\Admin\.m2\repository\org\codehaus\plexus\plexus-interpolation\1.11\plexus-interpolation-1.11.jar;C:\Users\Admin\.m2\repository\org\codehaus\plexus\plexus-utils\1.5.15\plexus-utils-1.5.15.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-artifact\2.2.1\maven-artifact-2.2.1.jar;C:\Users\Admin\.m2\repository\org\codehaus\plexus\plexus-container-default\1.0-alpha-9-stable-1\plexus-container-default-1.0-alpha-9-stable-1.jar;C:\Users\Admin\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\Users\Admin\.m2\repository\classworlds\classworlds\1.1-alpha-2\classworlds-1.1-alpha-2.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\Admin\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\Admin\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Admin\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\Admin\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Admin"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-10-17"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-21"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\QA\MyProjestsNew\com.google"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="webdriver.msedge.driver" value="src/test/resources/msedgedriver.exe"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Admin\AppData\Local\Temp\surefire13865395730234579735\surefirebooter-20231220175114092_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.1+12-LTS-29"/>
+    <property name="user.name" value="Admin"/>
+    <property name="stdout.encoding" value="Cp1251"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Admin\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Admin\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2023.3.1"/>
+    <property name="java.version" value="21.0.1"/>
+    <property name="user.dir" value="D:\QA\MyProjestsNew\com.google"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="webdriver.gecko.driver" value="src/test/resources/geckodriver.exe"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1251"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-21\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Java\jdk-21\bin;C:\Users\Admin\scoop\shims;C:\Users\Admin\AppData\Local\Microsoft\WindowsApps;C:\Users\Admin\AppData\Local\JetBrains\Toolbox\scripts;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1251"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="21.0.1+12-LTS-29"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="searchResultsClickingSearchButtonUnderSearchField" classname="com.google.tests.N_0001_SearchResultsClickingSearchButtonUnderSearchFieldTest" time="0.0">
+    <skipped message="Element &lt;input class=&quot;gNO89b&quot; name=&quot;btnK&quot; type=&quot;submit&quot;&gt; is not clickable at point (884,471) because another element &lt;span&gt; obscures it&#10;Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [0403a982-0c1d-46dd-b66f-06515dfac4e1, clickElement {id=1087fc34-26fa-4a6e-8c46-230979f9054a}]&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0, moz:accessibilityChecks: false, moz:buildID: 20231211174248, moz:debuggerAddress: 127.0.0.1:42558, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 16468, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:42558/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Element: [[FirefoxDriver: firefox on windows (0403a982-0c1d-46dd-b66f-06515dfac4e1)] -&gt; css selector: center:nth-child(1) &gt; input:nth-child(1)]&#10;Session ID: 0403a982-0c1d-46dd-b66f-06515dfac4e1"/>
+    <system-out><![CDATA[Before navigating to: 'https://www.google.com/'
+Before navigating to: 'https://www.google.com/'
+Navigated to:'https://www.google.com/'
+Navigated to:'https://www.google.com/'
+Trying to find Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Found Element By : By.name: q
+Change value: [[EdgeDriver: MicrosoftEdge on windows (599a35e2460221e0d9784b146a00011f)] -> name: q]
+Change value: [[ChromeDriver: chrome on windows (591e66851a65a86d19088587dbbe3b41)] -> name: q]
+Changed element: [[ChromeDriver: chrome on windows (591e66851a65a86d19088587dbbe3b41)] -> name: q]
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Changed element: [[EdgeDriver: MicrosoftEdge on windows (599a35e2460221e0d9784b146a00011f)] -> name: q]
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Change value: [[ChromeDriver: chrome on windows (591e66851a65a86d19088587dbbe3b41)] -> name: q]
+Found Element By : By.name: q
+Change value: [[EdgeDriver: MicrosoftEdge on windows (599a35e2460221e0d9784b146a00011f)] -> name: q]
+Changed element: [[ChromeDriver: chrome on windows (591e66851a65a86d19088587dbbe3b41)] -> name: q]
+Trying to find Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Changed element: [[EdgeDriver: MicrosoftEdge on windows (599a35e2460221e0d9784b146a00011f)] -> name: q]
+Trying to find Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Found Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Found Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Trying to find Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Found Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Trying to click on: [[ChromeDriver: chrome on windows (591e66851a65a86d19088587dbbe3b41)] -> css selector: center:nth-child(1) > input:nth-child(1)]
+Trying to find Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Found Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Trying to click on: [[EdgeDriver: MicrosoftEdge on windows (599a35e2460221e0d9784b146a00011f)] -> css selector: center:nth-child(1) > input:nth-child(1)]
+Clicked on: [[ChromeDriver: chrome on windows (591e66851a65a86d19088587dbbe3b41)] -> css selector: center:nth-child(1) > input:nth-child(1)]
+Trying to find Element By : By.cssSelector: #rso>div
+Clicked on: [[EdgeDriver: MicrosoftEdge on windows (599a35e2460221e0d9784b146a00011f)] -> css selector: center:nth-child(1) > input:nth-child(1)]
+Trying to find Element By : By.cssSelector: #rso>div
+Before navigating to: 'https://www.google.com/'
+Navigated to:'https://www.google.com/'
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Change value: [[FirefoxDriver: firefox on windows (0403a982-0c1d-46dd-b66f-06515dfac4e1)] -> name: q]
+Changed element: [[FirefoxDriver: firefox on windows (0403a982-0c1d-46dd-b66f-06515dfac4e1)] -> name: q]
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Change value: [[FirefoxDriver: firefox on windows (0403a982-0c1d-46dd-b66f-06515dfac4e1)] -> name: q]
+Changed element: [[FirefoxDriver: firefox on windows (0403a982-0c1d-46dd-b66f-06515dfac4e1)] -> name: q]
+Trying to find Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Found Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Trying to find Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Found Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Trying to click on: [[FirefoxDriver: firefox on windows (0403a982-0c1d-46dd-b66f-06515dfac4e1)] -> css selector: center:nth-child(1) > input:nth-child(1)]
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Dec 20, 2023 5:51:16 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 120, so returning the closest version found: 117
+Dec 20, 2023 5:51:17 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 120, so returning the closest version found: 117
+]]></system-err>
+  </testcase>
+  <testcase name="searchResultsClickingSearchButtonUnderSearchField" classname="com.google.tests.N_0001_SearchResultsClickingSearchButtonUnderSearchFieldTest" time="0.857">
+    <system-out><![CDATA[Before navigating to: 'https://www.google.com/'
+Navigated to:'https://www.google.com/'
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Change value: [[FirefoxDriver: firefox on windows (0403a982-0c1d-46dd-b66f-06515dfac4e1)] -> name: q]
+Changed element: [[FirefoxDriver: firefox on windows (0403a982-0c1d-46dd-b66f-06515dfac4e1)] -> name: q]
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Change value: [[FirefoxDriver: firefox on windows (0403a982-0c1d-46dd-b66f-06515dfac4e1)] -> name: q]
+Changed element: [[FirefoxDriver: firefox on windows (0403a982-0c1d-46dd-b66f-06515dfac4e1)] -> name: q]
+Trying to find Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Found Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Trying to find Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.name: q
+Found Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Trying to click on: [[FirefoxDriver: firefox on windows (0403a982-0c1d-46dd-b66f-06515dfac4e1)] -> css selector: center:nth-child(1) > input:nth-child(1)]
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.name: q
+]]></system-out>
+  </testcase>
+  <testcase name="searchResultsClickingSearchButtonUnderSearchField" classname="com.google.tests.N_0001_SearchResultsClickingSearchButtonUnderSearchFieldTest" time="0.977">
+    <system-out><![CDATA[Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+]]></system-out>
+  </testcase>
+  <testcase name="searchResultsClickingSearchButtonUnderSearchField" classname="com.google.tests.N_0001_SearchResultsClickingSearchButtonUnderSearchFieldTest" time="1.005">
+    <failure message="Element &lt;input class=&quot;gNO89b&quot; name=&quot;btnK&quot; type=&quot;submit&quot;&gt; is not clickable at point (884,471) because another element &lt;span&gt; obscures it&#10;Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [0403a982-0c1d-46dd-b66f-06515dfac4e1, clickElement {id=3997f3be-0e75-41ec-83d8-806bf183b585}]&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0, moz:accessibilityChecks: false, moz:buildID: 20231211174248, moz:debuggerAddress: 127.0.0.1:42558, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 16468, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:42558/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Element: [[FirefoxDriver: firefox on windows (0403a982-0c1d-46dd-b66f-06515dfac4e1)] -&gt; css selector: center:nth-child(1) &gt; input:nth-child(1)]&#10;Session ID: 0403a982-0c1d-46dd-b66f-06515dfac4e1" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
+Element <input class="gNO89b" name="btnK" type="submit"> is not clickable at point (884,471) because another element <span> obscures it
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [0403a982-0c1d-46dd-b66f-06515dfac4e1, clickElement {id=3997f3be-0e75-41ec-83d8-806bf183b585}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0, moz:accessibilityChecks: false, moz:buildID: 20231211174248, moz:debuggerAddress: 127.0.0.1:42558, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 16468, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:42558/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on windows (0403a982-0c1d-46dd-b66f-06515dfac4e1)] -> css selector: center:nth-child(1) > input:nth-child(1)]
+Session ID: 0403a982-0c1d-46dd-b66f-06515dfac4e1
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:375)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:387)
+	at com.google.pages.BasePage.actionClickElement(BasePage.java:43)
+	at com.google.pages.GoogleMainPage.clickSearchButtonUnderSearchFieldWhenSearchFieldIsFilled(GoogleMainPage.java:40)
+	at com.google.tests.N_0001_SearchResultsClickingSearchButtonUnderSearchFieldTest.searchResultsClickingSearchButtonUnderSearchField(N_0001_SearchResultsClickingSearchButtonUnderSearchFieldTest.java:16)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+]]></failure>
+  </testcase>
+  <testcase name="searchResultsClickingSearchButtonOnDropDownMenu" classname="com.google.tests.N_0002_SearchResultsClickingSearchButtonOnDropDownMenuTest" time="0.838">
+    <system-out><![CDATA[Before navigating to: 'https://www.google.com/'
+Navigated to:'https://www.google.com/'
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Change value: [[ChromeDriver: chrome on windows (01d46daf804bf9f19c5299812e5b7b7e)] -> name: q]
+Changed element: [[ChromeDriver: chrome on windows (01d46daf804bf9f19c5299812e5b7b7e)] -> name: q]
+Trying to find Element By : By.cssSelector: center:nth-child(2) > input:nth-child(1)
+Found Element By : By.cssSelector: center:nth-child(2) > input:nth-child(1)
+Trying to find Element By : By.cssSelector: center:nth-child(2) > input:nth-child(1)
+Found Element By : By.cssSelector: center:nth-child(2) > input:nth-child(1)
+Trying to click on: [[ChromeDriver: chrome on windows (01d46daf804bf9f19c5299812e5b7b7e)] -> css selector: center:nth-child(2) > input:nth-child(1)]
+Clicked on: [[ChromeDriver: chrome on windows (01d46daf804bf9f19c5299812e5b7b7e)] -> css selector: center:nth-child(2) > input:nth-child(1)]
+Trying to find Element By : By.cssSelector: #rso>div
+Before navigating to: 'https://www.google.com/'
+Navigated to:'https://www.google.com/'
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Change value: [[EdgeDriver: MicrosoftEdge on windows (546fd56200755b15210268d2b293dca9)] -> name: q]
+Changed element: [[EdgeDriver: MicrosoftEdge on windows (546fd56200755b15210268d2b293dca9)] -> name: q]
+Trying to find Element By : By.cssSelector: center:nth-child(2) > input:nth-child(1)
+Found Element By : By.cssSelector: center:nth-child(2) > input:nth-child(1)
+Trying to find Element By : By.cssSelector: center:nth-child(2) > input:nth-child(1)
+Found Element By : By.cssSelector: center:nth-child(2) > input:nth-child(1)
+Trying to click on: [[EdgeDriver: MicrosoftEdge on windows (546fd56200755b15210268d2b293dca9)] -> css selector: center:nth-child(2) > input:nth-child(1)]
+Before navigating to: 'https://www.google.com/'
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+]]></system-out>
+    <system-err><![CDATA[Dec 20, 2023 5:51:23 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 120, so returning the closest version found: 117
+Dec 20, 2023 5:51:26 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 120, so returning the closest version found: 117
+]]></system-err>
+  </testcase>
+  <testcase name="searchResultsClickingSearchButtonOnDropDownMenu" classname="com.google.tests.N_0002_SearchResultsClickingSearchButtonOnDropDownMenuTest" time="1.681">
+    <system-out><![CDATA[Navigated to:'https://www.google.com/'
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Change value: [[FirefoxDriver: firefox on windows (b78464cb-57ea-49f2-8e6d-322a05083495)] -> name: q]
+Changed element: [[FirefoxDriver: firefox on windows (b78464cb-57ea-49f2-8e6d-322a05083495)] -> name: q]
+Trying to find Element By : By.cssSelector: center:nth-child(2) > input:nth-child(1)
+Found Element By : By.cssSelector: center:nth-child(2) > input:nth-child(1)
+Trying to find Element By : By.cssSelector: center:nth-child(2) > input:nth-child(1)
+Found Element By : By.cssSelector: center:nth-child(2) > input:nth-child(1)
+Trying to find Element By : By.cssSelector: center:nth-child(2) > input:nth-child(1)
+Found Element By : By.cssSelector: center:nth-child(2) > input:nth-child(1)
+Trying to click on: [[FirefoxDriver: firefox on windows (b78464cb-57ea-49f2-8e6d-322a05083495)] -> css selector: center:nth-child(2) > input:nth-child(1)]
+Before navigating to: 'https://www.google.com/'
+Navigated to:'https://www.google.com/'
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Change value: [[ChromeDriver: chrome on windows (81212b4008e3c1fec9db6a56412ba0d3)] -> name: q]
+Changed element: [[ChromeDriver: chrome on windows (81212b4008e3c1fec9db6a56412ba0d3)] -> name: q]
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Change value: [[ChromeDriver: chrome on windows (81212b4008e3c1fec9db6a56412ba0d3)] -> name: q]
+Changed element: [[ChromeDriver: chrome on windows (81212b4008e3c1fec9db6a56412ba0d3)] -> name: q]
+Trying to find Element By : By.cssSelector: #rso>div
+Clicked on: [[EdgeDriver: MicrosoftEdge on windows (546fd56200755b15210268d2b293dca9)] -> css selector: center:nth-child(2) > input:nth-child(1)]
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+]]></system-out>
+    <system-err><![CDATA[Dec 20, 2023 5:51:30 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 120, so returning the closest version found: 117
+]]></system-err>
+  </testcase>
+  <testcase name="searchResultsClickingSearchButtonOnDropDownMenu" classname="com.google.tests.N_0002_SearchResultsClickingSearchButtonOnDropDownMenuTest" time="2.915">
+    <system-out><![CDATA[Clicked on: [[FirefoxDriver: firefox on windows (b78464cb-57ea-49f2-8e6d-322a05083495)] -> css selector: center:nth-child(2) > input:nth-child(1)]
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+]]></system-out>
+  </testcase>
+  <testcase name="searchResultsClickingEnterButton" classname="com.google.tests.N_0003_SearchResultsClickingEnterButtonTest" time="2.671">
+    <system-out><![CDATA[Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+]]></system-out>
+  </testcase>
+  <testcase name="searchResultsClickingEnterButton" classname="com.google.tests.N_0003_SearchResultsClickingEnterButtonTest" time="3.207">
+    <system-out><![CDATA[Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Change value: [[EdgeDriver: MicrosoftEdge on windows (22e6f0588b5e15431333c99eddb3b8a9)] -> name: q]
+Changed element: [[EdgeDriver: MicrosoftEdge on windows (22e6f0588b5e15431333c99eddb3b8a9)] -> name: q]
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+]]></system-out>
+  </testcase>
+  <testcase name="searchResultsClickingEnterButton" classname="com.google.tests.N_0003_SearchResultsClickingEnterButtonTest" time="0.42">
+    <system-out><![CDATA[Before navigating to: 'https://www.google.com/'
+Navigated to:'https://www.google.com/'
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Change value: [[FirefoxDriver: firefox on windows (94855243-6a6b-4e4f-8c1d-fccabc34e9d6)] -> name: q]
+Changed element: [[FirefoxDriver: firefox on windows (94855243-6a6b-4e4f-8c1d-fccabc34e9d6)] -> name: q]
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Change value: [[FirefoxDriver: firefox on windows (94855243-6a6b-4e4f-8c1d-fccabc34e9d6)] -> name: q]
+Changed element: [[FirefoxDriver: firefox on windows (94855243-6a6b-4e4f-8c1d-fccabc34e9d6)] -> name: q]
+Trying to find Element By : By.cssSelector: #rso>div
+Before navigating to: 'https://www.google.com/'
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+]]></system-out>
+    <system-err><![CDATA[Dec 20, 2023 5:51:40 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 120, so returning the closest version found: 117
+]]></system-err>
+  </testcase>
+  <testcase name="clickSearchButtonWhenSearchFieldIsEmpty" classname="com.google.tests.N_0004_ClickSearchButtonWhenSearchFieldIsEmptyTest" time="1.093">
+    <system-out><![CDATA[Before navigating to: 'https://www.google.com/'
+Before navigating to: 'https://www.google.com/'
+Navigated to:'https://www.google.com/'
+Trying to find Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Navigated to:'https://www.google.com/'
+Trying to find Element By : By.name: q
+Found Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Found Element By : By.name: q
+Trying to find Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Trying to find Element By : By.name: q
+Found Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Trying to click on: [[ChromeDriver: chrome on windows (8880d8c3161b37c41398343555816027)] -> css selector: center:nth-child(1) > input:nth-child(1)]
+Found Element By : By.name: q
+Change value: [[EdgeDriver: MicrosoftEdge on windows (22e6f0588b5e15431333c99eddb3b8a9)] -> name: q]
+Clicked on: [[ChromeDriver: chrome on windows (8880d8c3161b37c41398343555816027)] -> css selector: center:nth-child(1) > input:nth-child(1)]
+Trying to find Element By : By.linkText: Gmail
+Changed element: [[EdgeDriver: MicrosoftEdge on windows (22e6f0588b5e15431333c99eddb3b8a9)] -> name: q]
+Trying to find Element By : By.name: q
+Found Element By : By.linkText: Gmail
+]]></system-out>
+    <system-err><![CDATA[Dec 20, 2023 5:51:34 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 120, so returning the closest version found: 117
+Dec 20, 2023 5:51:34 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 120, so returning the closest version found: 117
+]]></system-err>
+  </testcase>
+  <testcase name="clickSearchButtonWhenSearchFieldIsEmpty" classname="com.google.tests.N_0004_ClickSearchButtonWhenSearchFieldIsEmptyTest" time="0.881">
+    <system-out><![CDATA[Navigated to:'https://www.google.com/'
+Trying to find Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Found Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Trying to find Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Found Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Trying to click on: [[EdgeDriver: MicrosoftEdge on windows (b44776254bb342d7f1dc58c743a97589)] -> css selector: center:nth-child(1) > input:nth-child(1)]
+Clicked on: [[EdgeDriver: MicrosoftEdge on windows (b44776254bb342d7f1dc58c743a97589)] -> css selector: center:nth-child(1) > input:nth-child(1)]
+Trying to find Element By : By.linkText: Gmail
+Found Element By : By.linkText: Gmail
+]]></system-out>
+  </testcase>
+  <testcase name="clickSearchButtonWhenSearchFieldIsEmpty" classname="com.google.tests.N_0004_ClickSearchButtonWhenSearchFieldIsEmptyTest" time="1.231">
+    <system-out><![CDATA[Before navigating to: 'https://www.google.com/'
+Navigated to:'https://www.google.com/'
+Trying to find Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Found Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Trying to find Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Found Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Trying to click on: [[FirefoxDriver: firefox on windows (3b01c901-1060-4658-9743-333c90c8009a)] -> css selector: center:nth-child(1) > input:nth-child(1)]
+Clicked on: [[FirefoxDriver: firefox on windows (3b01c901-1060-4658-9743-333c90c8009a)] -> css selector: center:nth-child(1) > input:nth-child(1)]
+Trying to find Element By : By.linkText: Gmail
+Found Element By : By.linkText: Gmail
+]]></system-out>
+  </testcase>
+</testsuite>

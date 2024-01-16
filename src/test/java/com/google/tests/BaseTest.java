@@ -6,6 +6,7 @@ import com.google.utils.DataConverter;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.Assert;
+import org.testng.ITestContext;
 import org.testng.annotations.*;
 
 import java.util.concurrent.TimeUnit;
@@ -31,6 +32,11 @@ public abstract class BaseTest {
         this.browserType = browserType;
     }
 
+//    @BeforeSuite()
+//    public void setSuiteName(ITestContext context){
+//        context.getCurrentXmlTest().getSuite().setName("Smoke Tests Run "
+//                + System.getProperty("os.name"));
+//    }
 
     @BeforeClass
     @Parameters("browser")

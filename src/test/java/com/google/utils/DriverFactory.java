@@ -50,7 +50,7 @@ public class DriverFactory {
                     return new ChromeDriver();
                 case "edge":
                     System.setProperty(
-                            "webdriver.msedge.driver", "src/test/resources/msedgedriver.exe");
+                            "webdriver.edge.driver", "src/test/resources/msedgedriver.exe");
                     return new EdgeDriver();
                 case "ie":
                 case "internet explorer":

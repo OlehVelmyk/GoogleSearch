@@ -2,6 +2,7 @@ package com.google.tests;
 
 import com.google.actionHelpers.CountSearchResult;
 import com.google.pages.GoogleMainPage;
+import com.google.utils.RetryAnalyzer;
 import org.testng.annotations.Test;
 
 public class N_0005_CountSearchResultTest extends BaseTest {
