@@ -1,0 +1,1371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="389.88" tests="20" errors="0" skipped="0" failures="4">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="webdriver.chrome.driver" value="src/test/resources/chromedriver.exe"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="org.uncommons.reportng.escape-output" value="false"/>
+    <property name="java.class.path" value="D:\QA\MyProjestsNew\com.google\target\test-classes;D:\QA\MyProjestsNew\com.google\target\classes;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\Admin\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\Admin\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Admin\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\Admin\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\Admin\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\Admin\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\Admin\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\Admin\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\Admin\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\Admin\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\Admin\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar;C:\Users\Admin\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Admin\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Admin\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\Admin\.m2\repository\org\uncommons\reportng\1.1.4\reportng-1.1.4.jar;C:\Users\Admin\.m2\repository\velocity\velocity\1.4\velocity-1.4.jar;C:\Users\Admin\.m2\repository\velocity\velocity-dep\1.4\velocity-dep-1.4.jar;C:\Users\Admin\.m2\repository\org\apache\velocity\velocity\1.7\velocity-1.7.jar;C:\Users\Admin\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar;C:\Users\Admin\.m2\repository\commons-lang\commons-lang\2.4\commons-lang-2.4.jar;C:\Users\Admin\.m2\repository\com\google\inject\guice\7.0.0\guice-7.0.0.jar;C:\Users\Admin\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\Admin\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-project\2.2.1\maven-project-2.2.1.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-settings\2.2.1\maven-settings-2.2.1.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-profile\2.2.1\maven-profile-2.2.1.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-model\2.2.1\maven-model-2.2.1.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-artifact-manager\2.2.1\maven-artifact-manager-2.2.1.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-repository-metadata\2.2.1\maven-repository-metadata-2.2.1.jar;C:\Users\Admin\.m2\repository\org\apache\maven\wagon\wagon-provider-api\1.0-beta-6\wagon-provider-api-1.0-beta-6.jar;C:\Users\Admin\.m2\repository\backport-util-concurrent\backport-util-concurrent\3.1\backport-util-concurrent-3.1.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-plugin-registry\2.2.1\maven-plugin-registry-2.2.1.jar;C:\Users\Admin\.m2\repository\org\codehaus\plexus\plexus-interpolation\1.11\plexus-interpolation-1.11.jar;C:\Users\Admin\.m2\repository\org\codehaus\plexus\plexus-utils\1.5.15\plexus-utils-1.5.15.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-artifact\2.2.1\maven-artifact-2.2.1.jar;C:\Users\Admin\.m2\repository\org\codehaus\plexus\plexus-container-default\1.0-alpha-9-stable-1\plexus-container-default-1.0-alpha-9-stable-1.jar;C:\Users\Admin\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\Users\Admin\.m2\repository\classworlds\classworlds\1.1-alpha-2\classworlds-1.1-alpha-2.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Kiev"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
+    <property name="sun.java.command" value="C:\Users\Admin\AppData\Local\Temp\surefire10536350708795577504\surefirebooter-20231230142237124_3.jar C:\Users\Admin\AppData\Local\Temp\surefire10536350708795577504 2023-12-30T14-22-36_985-jvmRun1 surefire-20231230142237124_1tmp surefire_0-20231230142237124_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\QA\MyProjestsNew\com.google\target\test-classes;D:\QA\MyProjestsNew\com.google\target\classes;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\Admin\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\Admin\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Admin\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\Admin\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\Admin\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\Admin\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\Admin\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\Admin\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\Admin\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\Admin\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\Admin\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar;C:\Users\Admin\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Admin\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Admin\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\Admin\.m2\repository\org\uncommons\reportng\1.1.4\reportng-1.1.4.jar;C:\Users\Admin\.m2\repository\velocity\velocity\1.4\velocity-1.4.jar;C:\Users\Admin\.m2\repository\velocity\velocity-dep\1.4\velocity-dep-1.4.jar;C:\Users\Admin\.m2\repository\org\apache\velocity\velocity\1.7\velocity-1.7.jar;C:\Users\Admin\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar;C:\Users\Admin\.m2\repository\commons-lang\commons-lang\2.4\commons-lang-2.4.jar;C:\Users\Admin\.m2\repository\com\google\inject\guice\7.0.0\guice-7.0.0.jar;C:\Users\Admin\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\Admin\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-project\2.2.1\maven-project-2.2.1.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-settings\2.2.1\maven-settings-2.2.1.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-profile\2.2.1\maven-profile-2.2.1.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-model\2.2.1\maven-model-2.2.1.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-artifact-manager\2.2.1\maven-artifact-manager-2.2.1.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-repository-metadata\2.2.1\maven-repository-metadata-2.2.1.jar;C:\Users\Admin\.m2\repository\org\apache\maven\wagon\wagon-provider-api\1.0-beta-6\wagon-provider-api-1.0-beta-6.jar;C:\Users\Admin\.m2\repository\backport-util-concurrent\backport-util-concurrent\3.1\backport-util-concurrent-3.1.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-plugin-registry\2.2.1\maven-plugin-registry-2.2.1.jar;C:\Users\Admin\.m2\repository\org\codehaus\plexus\plexus-interpolation\1.11\plexus-interpolation-1.11.jar;C:\Users\Admin\.m2\repository\org\codehaus\plexus\plexus-utils\1.5.15\plexus-utils-1.5.15.jar;C:\Users\Admin\.m2\repository\org\apache\maven\maven-artifact\2.2.1\maven-artifact-2.2.1.jar;C:\Users\Admin\.m2\repository\org\codehaus\plexus\plexus-container-default\1.0-alpha-9-stable-1\plexus-container-default-1.0-alpha-9-stable-1.jar;C:\Users\Admin\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\Users\Admin\.m2\repository\classworlds\classworlds\1.1-alpha-2\classworlds-1.1-alpha-2.jar;C:\Users\Admin\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Admin"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-10-17"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-21"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\QA\MyProjestsNew\com.google"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Admin\AppData\Local\Temp\surefire10536350708795577504\surefirebooter-20231230142237124_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.1+12-LTS-29"/>
+    <property name="webdriver.edge.driver" value="src/test/resources/msedgedriver.exe"/>
+    <property name="user.name" value="Admin"/>
+    <property name="stdout.encoding" value="Cp1251"/>
+    <property name="path.separator" value=";"/>
+    <property name="webdriver.opera.driver" value="src/test/resources/operadriver.exe"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Admin\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Admin\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2023.3.2"/>
+    <property name="java.version" value="21.0.1"/>
+    <property name="user.dir" value="D:\QA\MyProjestsNew\com.google"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="webdriver.gecko.driver" value="src/test/resources/geckodriver.exe"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1251"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-21\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Java\jdk-21\bin;C:\Users\Admin\scoop\shims;C:\Users\Admin\AppData\Local\Microsoft\WindowsApps;C:\Users\Admin\AppData\Local\JetBrains\Toolbox\scripts;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1251"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="21.0.1+12-LTS-29"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="searchResultsClickingSearchButtonUnderSearchField" classname="com.google.tests.N_0001_SearchResultsClickingSearchButtonUnderSearchFieldTest" time="0.155">
+    <system-out><![CDATA[Before navigating to: 'https://www.google.com/'
+Before navigating to: 'https://www.google.com/'
+Before navigating to: 'https://www.google.com/'
+Navigated to:'https://www.google.com/'
+Navigated to:'https://www.google.com/'
+Trying to find Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Found Element By : By.name: q
+Change value: [[ChromeDriver: chrome on WINDOWS (e2d7b762c8ddef06d2563282baa5e73f)] -> name: q]
+Change value: [[EdgeDriver: MicrosoftEdge on WINDOWS (1c5e93592b601ff965e696b5b86a3407)] -> name: q]
+Changed element: [[ChromeDriver: chrome on WINDOWS (e2d7b762c8ddef06d2563282baa5e73f)] -> name: q]
+Trying to find Element By : By.id: Alh6id
+Found Element By : By.id: Alh6id
+Changed element: [[EdgeDriver: MicrosoftEdge on WINDOWS (1c5e93592b601ff965e696b5b86a3407)] -> name: q]
+Trying to find Element By : By.id: Alh6id
+Found Element By : By.id: Alh6id
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Found Element By : By.name: q
+Navigated to:'https://www.google.com/'
+Change value: [[ChromeDriver: chrome on WINDOWS (e2d7b762c8ddef06d2563282baa5e73f)] -> name: q]
+Trying to find Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Changed element: [[ChromeDriver: chrome on WINDOWS (e2d7b762c8ddef06d2563282baa5e73f)] -> name: q]
+Trying to find Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Found Element By : By.name: q
+Change value: [[EdgeDriver: MicrosoftEdge on WINDOWS (1c5e93592b601ff965e696b5b86a3407)] -> name: q]
+Found Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Trying to find Element By : By.name: q
+Trying to find Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Found Element By : By.name: q
+Found Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (e2d7b762c8ddef06d2563282baa5e73f)] -> css selector: center:nth-child(1) > input:nth-child(1)]
+Changed element: [[EdgeDriver: MicrosoftEdge on WINDOWS (1c5e93592b601ff965e696b5b86a3407)] -> name: q]
+Trying to find Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Change value: [[OperaDriver: opera on WINDOWS (aed5a317a0ac59ccf9e0feac399b1f89)] -> name: q]
+Found Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Trying to find Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Found Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Trying to click on: [[EdgeDriver: MicrosoftEdge on WINDOWS (1c5e93592b601ff965e696b5b86a3407)] -> css selector: center:nth-child(1) > input:nth-child(1)]
+Changed element: [[OperaDriver: opera on WINDOWS (aed5a317a0ac59ccf9e0feac399b1f89)] -> name: q]
+Trying to find Element By : By.id: Alh6id
+Found Element By : By.id: Alh6id
+Clicked on: [[ChromeDriver: chrome on WINDOWS (e2d7b762c8ddef06d2563282baa5e73f)] -> css selector: center:nth-child(1) > input:nth-child(1)]
+Trying to find Element By : By.cssSelector: div.MjjYud
+Clicked on: [[EdgeDriver: MicrosoftEdge on WINDOWS (1c5e93592b601ff965e696b5b86a3407)] -> css selector: center:nth-child(1) > input:nth-child(1)]
+Trying to find Element By : By.cssSelector: div.MjjYud
+Trying to find Element By : By.id: Alh6id
+Found Element By : By.id: Alh6id
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Change value: [[OperaDriver: opera on WINDOWS (aed5a317a0ac59ccf9e0feac399b1f89)] -> name: q]
+Changed element: [[OperaDriver: opera on WINDOWS (aed5a317a0ac59ccf9e0feac399b1f89)] -> name: q]
+Trying to find Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Found Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Trying to find Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Found Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Trying to click on: [[OperaDriver: opera on WINDOWS (aed5a317a0ac59ccf9e0feac399b1f89)] -> css selector: center:nth-child(1) > input:nth-child(1)]
+Clicked on: [[OperaDriver: opera on WINDOWS (aed5a317a0ac59ccf9e0feac399b1f89)] -> css selector: center:nth-child(1) > input:nth-child(1)]
+Trying to find Element By : By.cssSelector: div.MjjYud
+Before navigating to: 'https://www.google.com/'
+Found Element By : By.cssSelector: div.MjjYud
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting Microsoft Edge WebDriver 120.0.2210.77 (e8468c80f044120bed526c6a3d872c25df2e667f) on port 23766
+To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
+
+Only local connections are allowed.
+Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
+
+1703938958692	geckodriver	INFO	Listening on 127.0.0.1:21311
+Starting OperaDriver 119.0.6045.124 (358b60139a703ea4f1ce83a30da9401aa3e96a92-refs/branch-heads/6045@{#1232}) on port 27276
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping OperaDriver safe.
+OperaDriver was started successfully.
+Starting ChromeDriver 120.0.6099.71 (9729082fe6174c0a371fc66501f5efc5d69d3d2b-refs/branch-heads/6099_56@{#13}) on port 45132
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Microsoft Edge WebDriver was started successfully.
+[1703938958.980][SEVERE]: Check failed: false. NOTREACHED log messages are omitted in official builds. Sorry!
+1703938958988	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\Admin\\AppData\\Local\\Temp\\rust_mozprofileTHgixw"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1703938959511	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+Dec 30, 2023 2:22:39 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 30, 2023 2:22:39 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1703938960.000][WARNING]: This version of OperaDriver has not been tested with Opera version 120.
+Dec 30, 2023 2:22:40 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+1703938960449	Marionette	INFO	Listening on port 51506
+Read port: 51506
+1703938960799	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Dec 30, 2023 2:22:42 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="searchResultsClickingSearchButtonUnderSearchField" classname="com.google.tests.N_0001_SearchResultsClickingSearchButtonUnderSearchFieldTest" time="0.839">
+    <system-out><![CDATA[Navigated to:'https://www.google.com/'
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Found Element By : By.cssSelector: div.MjjYud
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Change value: [[FirefoxDriver: firefox on WINDOWS (513464d2-a6e6-42b7-acb5-2a50d922d0eb)] -> name: q]
+]]></system-out>
+    <system-err><![CDATA[Starting Microsoft Edge WebDriver 120.0.2210.77 (e8468c80f044120bed526c6a3d872c25df2e667f) on port 25274
+To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
+
+Only local connections are allowed.
+Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
+
+Microsoft Edge WebDriver was started successfully.
+]]></system-err>
+  </testcase>
+  <testcase name="searchResultsClickingSearchButtonUnderSearchField" classname="com.google.tests.N_0001_SearchResultsClickingSearchButtonUnderSearchFieldTest" time="0.477">
+    <system-out><![CDATA[Changed element: [[FirefoxDriver: firefox on WINDOWS (513464d2-a6e6-42b7-acb5-2a50d922d0eb)] -> name: q]
+Trying to find Element By : By.id: Alh6id
+Found Element By : By.id: Alh6id
+Before navigating to: 'https://www.google.com/'
+Trying to find Element By : By.id: Alh6id
+Found Element By : By.id: Alh6id
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Change value: [[FirefoxDriver: firefox on WINDOWS (513464d2-a6e6-42b7-acb5-2a50d922d0eb)] -> name: q]
+Changed element: [[FirefoxDriver: firefox on WINDOWS (513464d2-a6e6-42b7-acb5-2a50d922d0eb)] -> name: q]
+Trying to find Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Found Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Trying to find Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Found Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Trying to click on: [[FirefoxDriver: firefox on WINDOWS (513464d2-a6e6-42b7-acb5-2a50d922d0eb)] -> css selector: center:nth-child(1) > input:nth-child(1)]
+Found Element By : By.cssSelector: div.MjjYud
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+]]></system-out>
+    <system-err><![CDATA[Dec 30, 2023 2:22:43 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Starting OperaDriver 119.0.6045.124 (358b60139a703ea4f1ce83a30da9401aa3e96a92-refs/branch-heads/6045@{#1232}) on port 20560
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping OperaDriver safe.
+OperaDriver was started successfully.
+[1703938964.132][SEVERE]: Check failed: false. NOTREACHED log messages are omitted in official builds. Sorry!
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.google.com."
+]]></system-err>
+  </testcase>
+  <testcase name="searchResultsClickingSearchButtonUnderSearchField" classname="com.google.tests.N_0001_SearchResultsClickingSearchButtonUnderSearchFieldTest" time="1.538">
+    <system-out><![CDATA[Navigated to:'https://www.google.com/'
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Change value: [[EdgeDriver: MicrosoftEdge on WINDOWS (5d32dc9e4b169dc40c3125f7372a4cea)] -> name: q]
+Changed element: [[EdgeDriver: MicrosoftEdge on WINDOWS (5d32dc9e4b169dc40c3125f7372a4cea)] -> name: q]
+Trying to find Element By : By.id: Alh6id
+Found Element By : By.id: Alh6id
+Before navigating to: 'https://www.google.com/'
+Trying to find Element By : By.id: Alh6id
+Found Element By : By.id: Alh6id
+Trying to find Element By : By.cssSelector: center:nth-child(2) > input:nth-child(1)
+Found Element By : By.cssSelector: center:nth-child(2) > input:nth-child(1)
+Trying to find Element By : By.cssSelector: center:nth-child(2) > input:nth-child(1)
+Found Element By : By.cssSelector: center:nth-child(2) > input:nth-child(1)
+Trying to click on: [[EdgeDriver: MicrosoftEdge on WINDOWS (5d32dc9e4b169dc40c3125f7372a4cea)] -> css selector: center:nth-child(2) > input:nth-child(1)]
+Before navigating to: 'https://www.google.com/'
+Navigated to:'https://www.google.com/'
+Trying to find Element By : By.name: q
+Clicked on: [[EdgeDriver: MicrosoftEdge on WINDOWS (5d32dc9e4b169dc40c3125f7372a4cea)] -> css selector: center:nth-child(2) > input:nth-child(1)]
+Trying to find Element By : By.cssSelector: div.MjjYud
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Change value: [[OperaDriver: opera on WINDOWS (1b69b3f862e00da17b52e3115c868e97)] -> name: q]
+Changed element: [[OperaDriver: opera on WINDOWS (1b69b3f862e00da17b52e3115c868e97)] -> name: q]
+Trying to find Element By : By.id: Alh6id
+Found Element By : By.id: Alh6id
+Trying to find Element By : By.cssSelector: center:nth-child(2) > input:nth-child(1)
+Found Element By : By.cssSelector: center:nth-child(2) > input:nth-child(1)
+Trying to find Element By : By.cssSelector: center:nth-child(2) > input:nth-child(1)
+Found Element By : By.cssSelector: center:nth-child(2) > input:nth-child(1)
+Trying to click on: [[OperaDriver: opera on WINDOWS (1b69b3f862e00da17b52e3115c868e97)] -> css selector: center:nth-child(2) > input:nth-child(1)]
+Clicked on: [[OperaDriver: opera on WINDOWS (1b69b3f862e00da17b52e3115c868e97)] -> css selector: center:nth-child(2) > input:nth-child(1)]
+Trying to find Element By : By.cssSelector: div.MjjYud
+Navigated to:'https://www.google.com/'
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Change value: [[ChromeDriver: chrome on WINDOWS (cac7552ed21443f3b4b2cebff5c5b867)] -> name: q]
+Changed element: [[ChromeDriver: chrome on WINDOWS (cac7552ed21443f3b4b2cebff5c5b867)] -> name: q]
+Trying to find Element By : By.id: Alh6id
+Found Element By : By.id: Alh6id
+Trying to find Element By : By.cssSelector: center:nth-child(2) > input:nth-child(1)
+Found Element By : By.cssSelector: center:nth-child(2) > input:nth-child(1)
+Trying to find Element By : By.cssSelector: center:nth-child(2) > input:nth-child(1)
+Found Element By : By.cssSelector: center:nth-child(2) > input:nth-child(1)
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (cac7552ed21443f3b4b2cebff5c5b867)] -> css selector: center:nth-child(2) > input:nth-child(1)]
+Clicked on: [[FirefoxDriver: firefox on WINDOWS (513464d2-a6e6-42b7-acb5-2a50d922d0eb)] -> css selector: center:nth-child(1) > input:nth-child(1)]
+Trying to find Element By : By.cssSelector: div.MjjYud
+Found Element By : By.cssSelector: div.MjjYud
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Clicked on: [[ChromeDriver: chrome on WINDOWS (cac7552ed21443f3b4b2cebff5c5b867)] -> css selector: center:nth-child(2) > input:nth-child(1)]
+Trying to find Element By : By.cssSelector: div.MjjYud
+]]></system-out>
+    <system-err><![CDATA[[1703938964.913][WARNING]: This version of OperaDriver has not been tested with Opera version 120.
+Starting ChromeDriver 120.0.6099.71 (9729082fe6174c0a371fc66501f5efc5d69d3d2b-refs/branch-heads/6099_56@{#13}) on port 24681
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Dec 30, 2023 2:22:45 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Dec 30, 2023 2:22:45 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="searchResultsClickingSearchButtonOnDropDownMenu" classname="com.google.tests.N_0002_SearchResultsClickingSearchButtonOnDropDownMenuTest" time="5.36">
+    <system-out><![CDATA[Found Element By : By.cssSelector: div.MjjYud
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+]]></system-out>
+    <system-err><![CDATA[1703938967358	Marionette	INFO	Stopped listening on port 51506
+JavaScript warning: https://www.youtube.com/s/player/da154528/www-embed-player.vflset/www-embed-player.js, line 1083: Script terminated by timeout at:
+co/this.done</<@https://www.youtube.com/s/player/da154528/www-embed-player.vflset/www-embed-player.js:1083:146
+
+JavaScript warning: https://www.youtube.com/s/player/da154528/www-widgetapi.vflset/www-widgetapi.js, line 1263: Script terminated by timeout at:
+r.sendMessage@https://www.youtube.com/s/player/da154528/www-widgetapi.vflset/www-widgetapi.js:1263:23
+r.Bc@https://www.youtube.com/s/player/da154528/www-widgetapi.vflset/www-widgetapi.js:1260:51
+
+Dynamically enable window occlusion 1
+]]></system-err>
+  </testcase>
+  <testcase name="searchResultsClickingSearchButtonOnDropDownMenu" classname="com.google.tests.N_0002_SearchResultsClickingSearchButtonOnDropDownMenuTest" time="6.068">
+    <system-out><![CDATA[Found Element By : By.cssSelector: div.MjjYud
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+]]></system-out>
+    <system-err><![CDATA[1703938971382	geckodriver	INFO	Listening on 127.0.0.1:30251
+1703938971413	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\Admin\\AppData\\Local\\Temp\\rust_mozprofileqtAjTK"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1703938971861	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+]]></system-err>
+  </testcase>
+  <testcase name="searchResultsClickingSearchButtonOnDropDownMenu" classname="com.google.tests.N_0002_SearchResultsClickingSearchButtonOnDropDownMenuTest" time="0.561">
+    <system-out><![CDATA[Before navigating to: 'https://www.google.com/'
+Found Element By : By.cssSelector: div.MjjYud
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+]]></system-out>
+    <system-err><![CDATA[Starting Microsoft Edge WebDriver 120.0.2210.77 (e8468c80f044120bed526c6a3d872c25df2e667f) on port 56456
+To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
+
+Only local connections are allowed.
+Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
+
+Microsoft Edge WebDriver was started successfully.
+1703938972578	Marionette	INFO	Listening on port 51881
+Read port: 51881
+1703938972862	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Dec 30, 2023 2:22:53 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Starting OperaDriver 119.0.6045.124 (358b60139a703ea4f1ce83a30da9401aa3e96a92-refs/branch-heads/6045@{#1232}) on port 37300
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping OperaDriver safe.
+OperaDriver was started successfully.
+[1703938973.565][SEVERE]: Check failed: false. NOTREACHED log messages are omitted in official builds. Sorry!
+]]></system-err>
+  </testcase>
+  <testcase name="searchResultsClickingSearchButtonOnDropDownMenu" classname="com.google.tests.N_0002_SearchResultsClickingSearchButtonOnDropDownMenuTest" time="3.334">
+    <system-out><![CDATA[Trying to find Element By : By.cssSelector: div.MjjYud
+Clicked on: [[FirefoxDriver: firefox on WINDOWS (1fbfa0ed-c5e1-41ce-8504-e08211347e07)] -> css selector: center:nth-child(2) > input:nth-child(1)]
+Trying to find Element By : By.cssSelector: div.MjjYud
+Found Element By : By.cssSelector: div.MjjYud
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+]]></system-out>
+    <system-err><![CDATA[Starting Microsoft Edge WebDriver 120.0.2210.77 (e8468c80f044120bed526c6a3d872c25df2e667f) on port 26770
+To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
+
+Only local connections are allowed.
+Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
+
+Microsoft Edge WebDriver was started successfully.
+]]></system-err>
+  </testcase>
+  <testcase name="searchResultsClickingEnterButton" classname="com.google.tests.N_0003_SearchResultsClickingEnterButtonTest" time="2.573">
+    <system-out><![CDATA[Navigated to:'https://www.google.com/'
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Change value: [[EdgeDriver: MicrosoftEdge on WINDOWS (96a9fbd85dbbde2d56fcb8c0166c9202)] -> name: q]
+Changed element: [[EdgeDriver: MicrosoftEdge on WINDOWS (96a9fbd85dbbde2d56fcb8c0166c9202)] -> name: q]
+Trying to find Element By : By.id: Alh6id
+Found Element By : By.id: Alh6id
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Change value: [[EdgeDriver: MicrosoftEdge on WINDOWS (96a9fbd85dbbde2d56fcb8c0166c9202)] -> name: q]
+Changed element: [[EdgeDriver: MicrosoftEdge on WINDOWS (96a9fbd85dbbde2d56fcb8c0166c9202)] -> name: q]
+Before navigating to: 'https://www.google.com/'
+Before navigating to: 'https://www.google.com/'
+Before navigating to: 'https://www.google.com/'
+Navigated to:'https://www.google.com/'
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.cssSelector: div.MjjYud
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Change value: [[OperaDriver: opera on WINDOWS (070fb21453d5ab4e7309f34cd338361e)] -> name: q]
+Navigated to:'https://www.google.com/'
+Trying to find Element By : By.name: q
+Changed element: [[OperaDriver: opera on WINDOWS (070fb21453d5ab4e7309f34cd338361e)] -> name: q]
+Trying to find Element By : By.id: Alh6id
+Found Element By : By.name: q
+Found Element By : By.id: Alh6id
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Change value: [[FirefoxDriver: firefox on WINDOWS (1fbfa0ed-c5e1-41ce-8504-e08211347e07)] -> name: q]
+Changed element: [[FirefoxDriver: firefox on WINDOWS (1fbfa0ed-c5e1-41ce-8504-e08211347e07)] -> name: q]
+Trying to find Element By : By.id: Alh6id
+Found Element By : By.id: Alh6id
+Trying to find Element By : By.cssSelector: center:nth-child(2) > input:nth-child(1)
+Found Element By : By.cssSelector: center:nth-child(2) > input:nth-child(1)
+Navigated to:'https://www.google.com/'
+Trying to find Element By : By.cssSelector: center:nth-child(2) > input:nth-child(1)
+Trying to find Element By : By.name: q
+Found Element By : By.cssSelector: center:nth-child(2) > input:nth-child(1)
+Trying to click on: [[FirefoxDriver: firefox on WINDOWS (1fbfa0ed-c5e1-41ce-8504-e08211347e07)] -> css selector: center:nth-child(2) > input:nth-child(1)]
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Change value: [[ChromeDriver: chrome on WINDOWS (2390102b485268ce98153222c6adba00)] -> name: q]
+Changed element: [[ChromeDriver: chrome on WINDOWS (2390102b485268ce98153222c6adba00)] -> name: q]
+Trying to find Element By : By.id: Alh6id
+Found Element By : By.id: Alh6id
+Trying to find Element By : By.id: Alh6id
+Found Element By : By.id: Alh6id
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Change value: [[OperaDriver: opera on WINDOWS (070fb21453d5ab4e7309f34cd338361e)] -> name: q]
+Changed element: [[OperaDriver: opera on WINDOWS (070fb21453d5ab4e7309f34cd338361e)] -> name: q]
+Trying to find Element By : By.id: Alh6id
+Found Element By : By.id: Alh6id
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Change value: [[ChromeDriver: chrome on WINDOWS (2390102b485268ce98153222c6adba00)] -> name: q]
+Changed element: [[ChromeDriver: chrome on WINDOWS (2390102b485268ce98153222c6adba00)] -> name: q]
+Trying to find Element By : By.cssSelector: div.MjjYud
+Found Element By : By.cssSelector: div.MjjYud
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+]]></system-out>
+    <system-err><![CDATA[[1703938974.231][WARNING]: This version of OperaDriver has not been tested with Opera version 120.
+Starting ChromeDriver 120.0.6099.71 (9729082fe6174c0a371fc66501f5efc5d69d3d2b-refs/branch-heads/6099_56@{#13}) on port 11620
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Dec 30, 2023 2:22:54 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Dec 30, 2023 2:22:54 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 30, 2023 2:22:55 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.google.com."
+]]></system-err>
+  </testcase>
+  <testcase name="searchResultsClickingEnterButton" classname="com.google.tests.N_0003_SearchResultsClickingEnterButtonTest" time="2.786">
+    <system-out><![CDATA[Found Element By : By.cssSelector: div.MjjYud
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+]]></system-out>
+  </testcase>
+  <testcase name="searchResultsClickingEnterButton" classname="com.google.tests.N_0003_SearchResultsClickingEnterButtonTest" time="0.264">
+    <system-out><![CDATA[Before navigating to: 'https://www.google.com/'
+Found Element By : By.cssSelector: div.MjjYud
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+]]></system-out>
+  </testcase>
+  <testcase name="searchResultsClickingEnterButton" classname="com.google.tests.N_0003_SearchResultsClickingEnterButtonTest" time="3.134">
+    <system-out><![CDATA[Changed element: [[EdgeDriver: MicrosoftEdge on WINDOWS (e23c7ed4fbc81b83e5afe3bf7470b8b4)] -> name: q]
+Trying to find Element By : By.id: Alh6id
+Found Element By : By.id: Alh6id
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Change value: [[EdgeDriver: MicrosoftEdge on WINDOWS (e23c7ed4fbc81b83e5afe3bf7470b8b4)] -> name: q]
+Changed element: [[EdgeDriver: MicrosoftEdge on WINDOWS (e23c7ed4fbc81b83e5afe3bf7470b8b4)] -> name: q]
+Before navigating to: 'https://www.google.com/'
+Navigated to:'https://www.google.com/'
+Trying to find Element By : By.name: q
+Trying to find Element By : By.cssSelector: div.MjjYud
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Before navigating to: 'https://www.google.com/'
+Found Element By : By.name: q
+Change value: [[OperaDriver: opera on WINDOWS (a371b75f2b88f1e54b8c16ef96ab9195)] -> name: q]
+Changed element: [[OperaDriver: opera on WINDOWS (a371b75f2b88f1e54b8c16ef96ab9195)] -> name: q]
+Trying to find Element By : By.id: Alh6id
+Found Element By : By.id: Alh6id
+Found Element By : By.cssSelector: div.MjjYud
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.id: Alh6id
+Found Element By : By.id: Alh6id
+Navigated to:'https://www.google.com/'
+Trying to find Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Change value: [[OperaDriver: opera on WINDOWS (a371b75f2b88f1e54b8c16ef96ab9195)] -> name: q]
+Found Element By : By.name: q
+Change value: [[ChromeDriver: chrome on WINDOWS (93dbd17bc6463f961b81beacf677d56b)] -> name: q]
+Before navigating to: 'https://www.google.com/'
+Changed element: [[ChromeDriver: chrome on WINDOWS (93dbd17bc6463f961b81beacf677d56b)] -> name: q]
+Trying to find Element By : By.id: Alh6id
+Changed element: [[OperaDriver: opera on WINDOWS (a371b75f2b88f1e54b8c16ef96ab9195)] -> name: q]
+Found Element By : By.id: Alh6id
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Change value: [[ChromeDriver: chrome on WINDOWS (93dbd17bc6463f961b81beacf677d56b)] -> name: q]
+Changed element: [[ChromeDriver: chrome on WINDOWS (93dbd17bc6463f961b81beacf677d56b)] -> name: q]
+Navigated to:'https://www.google.com/'
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.cssSelector: div.MjjYud
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Change value: [[FirefoxDriver: firefox on WINDOWS (8f810efc-57d9-4c49-8b48-2148f0733816)] -> name: q]
+Changed element: [[FirefoxDriver: firefox on WINDOWS (8f810efc-57d9-4c49-8b48-2148f0733816)] -> name: q]
+Trying to find Element By : By.id: Alh6id
+Found Element By : By.id: Alh6id
+Trying to find Element By : By.cssSelector: div.MjjYud
+Found Element By : By.cssSelector: div.MjjYud
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Trying to find Element By : By.id: Alh6id
+Found Element By : By.name: q
+Found Element By : By.id: Alh6id
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Change value: [[FirefoxDriver: firefox on WINDOWS (8f810efc-57d9-4c49-8b48-2148f0733816)] -> name: q]
+Changed element: [[FirefoxDriver: firefox on WINDOWS (8f810efc-57d9-4c49-8b48-2148f0733816)] -> name: q]
+Trying to find Element By : By.cssSelector: div.MjjYud
+Found Element By : By.cssSelector: div.MjjYud
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+]]></system-out>
+    <system-err><![CDATA[1703938983353	Marionette	INFO	Listening on port 52215
+Read port: 52215
+[1703938983.472][WARNING]: This version of OperaDriver has not been tested with Opera version 120.
+Dec 30, 2023 2:23:03 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+1703938983735	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Starting ChromeDriver 120.0.6099.71 (9729082fe6174c0a371fc66501f5efc5d69d3d2b-refs/branch-heads/6099_56@{#13}) on port 25394
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Dec 30, 2023 2:23:04 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 30, 2023 2:23:05 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.google.com."
+]]></system-err>
+  </testcase>
+  <testcase name="clickSearchButtonWhenSearchFieldIsEmpty" classname="com.google.tests.N_0004_ClickSearchButtonWhenSearchFieldIsEmptyTest" time="1.052">
+    <system-out><![CDATA[Before navigating to: 'https://www.google.com/'
+Navigated to:'https://www.google.com/'
+Trying to find Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Found Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Trying to find Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Found Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Trying to click on: [[EdgeDriver: MicrosoftEdge on WINDOWS (1b6394f9efe07bd26ceb832384e53c75)] -> css selector: center:nth-child(1) > input:nth-child(1)]
+Clicked on: [[EdgeDriver: MicrosoftEdge on WINDOWS (1b6394f9efe07bd26ceb832384e53c75)] -> css selector: center:nth-child(1) > input:nth-child(1)]
+Trying to find Element By : By.linkText: Gmail
+Found Element By : By.linkText: Gmail
+]]></system-out>
+    <system-err><![CDATA[1703938978535	Marionette	INFO	Stopped listening on port 51881
+JavaScript warning: https://www.youtube.com/s/player/da154528/player_ias.vflset/en_US/base.js, line 466: Script terminated by timeout at:
+Yca@https://www.youtube.com/s/player/da154528/player_ias.vflset/en_US/base.js:466:123
+yg@https://www.youtube.com/s/player/da154528/player_ias.vflset/en_US/base.js:474:74
+zg@https://www.youtube.com/s/player/da154528/player_ias.vflset/en_US/base.js:473:25
+Wn.prototype.jD/<@https://www.youtube.com/s/player/da154528/player_ias.vflset/en_US/base.js:7973:538
+Ga@https://www.youtube.com/s/player/da154528/player_ias.vflset/en_US/base.js:146:40
+iaa/this.next@https://www.youtube.com/s/player/da154528/player_ias.vflset/en_US/base.js:147:92
+b@https://www.youtube.com/s/player/da154528/player_ias.vflset/en_US/base.js:151:40
+
+Starting OperaDriver 119.0.6045.124 (358b60139a703ea4f1ce83a30da9401aa3e96a92-refs/branch-heads/6045@{#1232}) on port 12253
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping OperaDriver safe.
+OperaDriver was started successfully.
+[1703938979.244][SEVERE]: Check failed: false. NOTREACHED log messages are omitted in official builds. Sorry!
+Dec 30, 2023 2:22:59 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1703938980.260][WARNING]: This version of OperaDriver has not been tested with Opera version 120.
+Dec 30, 2023 2:23:00 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Dynamically enable window occlusion 1
+]]></system-err>
+  </testcase>
+  <testcase name="clickSearchButtonWhenSearchFieldIsEmpty" classname="com.google.tests.N_0004_ClickSearchButtonWhenSearchFieldIsEmptyTest" time="1.209">
+    <system-out><![CDATA[Navigated to:'https://www.google.com/'
+Trying to find Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Found Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Trying to find Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Found Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Trying to click on: [[OperaDriver: opera on WINDOWS (feaef47acda91728e70f0bd078904575)] -> css selector: center:nth-child(1) > input:nth-child(1)]
+Clicked on: [[OperaDriver: opera on WINDOWS (feaef47acda91728e70f0bd078904575)] -> css selector: center:nth-child(1) > input:nth-child(1)]
+Trying to find Element By : By.linkText: Gmail
+Found Element By : By.linkText: Gmail
+]]></system-out>
+    <system-err><![CDATA[Starting Microsoft Edge WebDriver 120.0.2210.77 (e8468c80f044120bed526c6a3d872c25df2e667f) on port 27104
+To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
+
+Only local connections are allowed.
+Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
+
+Microsoft Edge WebDriver was started successfully.
+Starting ChromeDriver 120.0.6099.71 (9729082fe6174c0a371fc66501f5efc5d69d3d2b-refs/branch-heads/6099_56@{#13}) on port 49296
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+  </testcase>
+  <testcase name="clickSearchButtonWhenSearchFieldIsEmpty" classname="com.google.tests.N_0004_ClickSearchButtonWhenSearchFieldIsEmptyTest" time="0.881">
+    <system-out><![CDATA[Before navigating to: 'https://www.google.com/'
+Before navigating to: 'https://www.google.com/'
+Navigated to:'https://www.google.com/'
+Trying to find Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Found Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Navigated to:'https://www.google.com/'
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Found Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (ec3c7c0fb4599bd8b95b8303c939c913)] -> css selector: center:nth-child(1) > input:nth-child(1)]
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Change value: [[EdgeDriver: MicrosoftEdge on WINDOWS (e23c7ed4fbc81b83e5afe3bf7470b8b4)] -> name: q]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (ec3c7c0fb4599bd8b95b8303c939c913)] -> css selector: center:nth-child(1) > input:nth-child(1)]
+Trying to find Element By : By.linkText: Gmail
+Found Element By : By.linkText: Gmail
+]]></system-out>
+    <system-err><![CDATA[Dec 30, 2023 2:23:02 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 30, 2023 2:23:02 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+1703938982231	geckodriver	INFO	Listening on 127.0.0.1:46268
+1703938982250	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\Admin\\AppData\\Local\\Temp\\rust_mozprofilelVh7xz"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Starting OperaDriver 119.0.6045.124 (358b60139a703ea4f1ce83a30da9401aa3e96a92-refs/branch-heads/6045@{#1232}) on port 47477
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping OperaDriver safe.
+OperaDriver was started successfully.
+[1703938982.757][SEVERE]: Check failed: false. NOTREACHED log messages are omitted in official builds. Sorry!
+1703938982770	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+]]></system-err>
+  </testcase>
+  <testcase name="clickSearchButtonWhenSearchFieldIsEmpty" classname="com.google.tests.N_0004_ClickSearchButtonWhenSearchFieldIsEmptyTest" time="1.265">
+    <system-out><![CDATA[Found Element By : By.cssSelector: div.MjjYud
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Before navigating to: 'https://www.google.com/'
+Navigated to:'https://www.google.com/'
+Trying to find Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Found Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Trying to find Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Found Element By : By.cssSelector: center:nth-child(1) > input:nth-child(1)
+Trying to click on: [[FirefoxDriver: firefox on WINDOWS (9e7196e9-3897-4cad-91d7-4d76bc172750)] -> css selector: center:nth-child(1) > input:nth-child(1)]
+Clicked on: [[FirefoxDriver: firefox on WINDOWS (9e7196e9-3897-4cad-91d7-4d76bc172750)] -> css selector: center:nth-child(1) > input:nth-child(1)]
+Trying to find Element By : By.linkText: Gmail
+Found Element By : By.linkText: Gmail
+]]></system-out>
+    <system-err><![CDATA[1703938988988	Marionette	INFO	Stopped listening on port 52215
+JavaScript warning: https://www.google.com/xjs/_/js/k=xjs.s.uk.XtutopfMG6s.O/am=ACAAAAgQAAAAAAAAAAAAAABAAAAAAAAEISAcMtkUB_DLIABAABgAAAWiikIAQwCBgM9_QgAAAAAAAEyAwACQBZAKP0MAAMAEqgDsAAAAACDYDwABAB4EAAAQAwAAIENDIfiAEFACAgAAAMgDgOcBDAcRHgAAAAAAAAAAAAAEPEEwOCD9ERAAAQAAAAAAAAAAAABS0uTlAAIAYA/d=1/ed=1/dg=2/rs=ACT90oETUhUByy77GScnOPC5gK3_FisFwA/ee=cEt90b:ws9Tlc;qddgKe:x4FYXe,d7YSfd;yxTchf:KUM7Z;dtl0hd:lLQWFe;eHDfl:ofjVkb;qaS3gd:yiLg6e;nAFL3:NTMZac,s39S4;oGtAuc:sOXFj;iFQyKf:vfuNJf,QIhFr;SNUn3:ZwDk9d,x8cHvb;io8t5d:sgY6Zb;Oj465e:KG2eXe,KG2eXe;Erl4fe:FloWmf,FloWmf;JsbNhc:Xd8iUd;sP4Vbe:VwDzFe;kMFpHd:OTA3Ae;uY49fb:COQbmf;Pjplud:PoEs9b,EEDORb;QGR0gd:Mlhmy;a56pNe:JEfCwb;Me32dd:MEeYgc;wR5FRb:TtcOte,O1Gjze;pXdRYb:JKoKVe;dIoSBb:ZgGg9b;EmZ2Bf:zr1jrb;NSEoX:lazG7b;eBAeSb:Ck63tb;WCEKNd:I46Hvd;wV5Pjc:L8KGxe;EVNhjf:pw70Gc;sTsDMc:kHVSUb;wQlYve:aLUfP;zOsCQe:Ko78Df;KcokUb:KiuZBf;kbAm9d:MkHyGd;g8nkx:U4MzKc;YV5bee:IvPZ6d;IoGlCf:b5lhvb;w9w86d:dt4g2b;ESrPQc:mNTJvc;bFZ6gf:RsDQqe;JXS8fb:Qj0suc;UyG7Kb:wQd0G;LsNahb:ucGLNb;xBbsrc:NEW1Qc;tosKvd:ZCqP3;vfVwPd:lcrkwe;GleZL:J1A7Od;bcPXSc:gSZLJb;VN6jIc:ddQyuf;oUlnpc:RagDlc;CxXAWb:YyRLvc;VGRfx:VFqbr;EABSZ:MXZt9d;DpcR3d:zL72xf;NPKaK:SdcwHb;LBgRLc:XVMNvd,SdcwHb;ZWEUA:afR4Cf;qZx2Fc:j0xrE;lzgfYb:PI40bd;pNsl2d:j9Yuyc;VsAqSb:PGf2Re;R9Ulx:CR7Ufe;kY7VAf:d91TEb;KpRAue:Tia57b;jY0zg:Q6tNgc;coJ8e:KvoW8;oSUNyd:fTfGO,fTfGO,pnvXVc;SMDL4c:fTfGO,pnvXVc;aZ61od:arTwJ;w4rSdf:XKiZ9;h3MYod:cEt90b;eO3lse:nFClrf;zaIgPb:Qtpxbd;HMDDWe:G8QUdb;ShpF6e:N0pvGc;k2Qxcb:XY51pe;IBADCc:RYquRb;pKJiXd:VCenhc;rQSrae:C6D5Fc;kCQyJ:ueyPK;qavrXe:zQzcXe,mYbt1d;TxfV6d:YORN0b;UDrY1c:eps46d;F9mqte:UoRcbe;Nyt6ic:jn2sGd;w3bZCb:ZPGaIb;G0KhTb:LIaoZ;XUezZ:sa7lqb;aAJE9c:WHW6Ef;V2HTTe:RolTY;Wfmdue:g3MJlb;imqimf:jKGL2e;BgS6mb:fidj5d;gtVSi:ekUOYd;KQzWid:ZMKkN;UVmjEd:EesRsb;z97YGf:oug9te;AfeaP:TkrAjf;eBZ5Nd:audvde;OgagBe:cNTe0;SLtqO:Kh1xYe;VOcgDe:YquhTb;uuQkY:u2V3ud;WDGyFe:jcVOxd;trZL0b:qY8PFe;VxQ32b:k0XsBb;DULqB:RKfG5c;Np8Qkd:Dpx6qc;cFTWae:gT8qnd;gaub4:TN6bMe;hjRo6e:F62sG;BjwMce:cXX2Wb;yGxLoc:FmAr0c;pj82le:mg5CW;dLlj2:Qqt3Gf;qGV2uc:HHi04c;R2kc8b:ALJqWb;EnlcNd:WeHg4;Q1Ow7b:x5CSu;okUaUd:wItadb;xbe2wc:wbTLEd;KOxcK:bFOvTc;G6wU6e:hezEbd;uknmt:GkPrzb;U96pRd:FsR04;PqHfGe:im2cZe;heHB1:sFczq;Fmv9Nc:O1Tzwc;hK67qb:QWEO5b;BMxAGc:E5bFse;R4IIIb:QWfeKf;whEZac:F4AmNb;tH4IIe:Ymry6;lkq0A:JyBE3e;daB6be:lMxGPd;LEikZe:byfTOb,lsjVmc/m=attn,cdos,cr,gwc,hsm,jsa,mb4ZUb,d,csi,cEt90b,SNUn3,qddgKe,sTsDMc,dtl0hd,eHDfl, line 426: Script terminated by timeout at:
+g@https://www.google.com/xjs/_/js/k=xjs.s.uk.XtutopfMG6s.O/am=ACAAAAgQAAAAAAAAAAAAAABAAAAAAAAEISAcMtkUB_DLIABAABgAAAWiikIAQwCBgM9_QgAAAAAAAEyAwACQBZAKP0MAAMAEqgDsAAAAACDYDwABAB4EAAAQAwAAIENDIfiAEFACAgAAAMgDgOcBDAcRHgAAAAAAAAAAAAAEPEEwOCD9ERAAAQAAAAAAAAAAAABS0uTlAAIAYA/d=1/ed=1/dg=2/rs=ACT90oETUhUByy77GScnOPC5gK3_FisFwA/ee=cEt90b:ws9Tlc;qddgKe:x4FYXe,d7YSfd;yxTchf:KUM7Z;dtl0hd:lLQWFe;eHDfl:ofjVkb;qaS3gd:yiLg6e;nAFL3:NTMZac,s39S4;oGtAuc:sOXFj;iFQyKf:vfuNJf,QIhFr;SNUn3:ZwDk9d,x8cHvb;io8t5d:sgY6Zb;Oj465e:KG2eXe,KG2eXe;Erl4fe:FloWmf,FloWmf;JsbNhc:Xd8iUd;sP4Vbe:VwDzFe;kMFpHd:OTA3Ae;uY49fb:COQbmf;Pjplud:PoEs9b,EEDORb;QGR0gd:Mlhmy;a56pNe:JEfCwb;Me32dd:MEeYgc;wR5FRb:TtcOte,O1Gjze;pXdRYb:JKoKVe;dIoSBb:ZgGg9b;EmZ2Bf:zr1jrb;NSEoX:lazG7b;eBAeSb:Ck63tb;WCEKNd:I46Hvd;wV5Pjc:L8KGxe;EVNhjf:pw70Gc;sTsDMc:kHVSUb;wQlYve:aLUfP;zOsCQe:Ko78Df;KcokUb:KiuZBf;kbAm9d:MkHyGd;g8nkx:U4MzKc;YV5bee:IvPZ6d;IoGlCf:b5lhvb;w9w86d:dt4g2b;ESrPQc:mNTJvc;bFZ6gf:RsDQqe;JXS8fb:Qj0suc;UyG7Kb:wQd0G;LsNahb:ucGLNb;xBbsrc:NEW1Qc;tosKvd:ZCqP3;vfVwPd:lcrkwe;GleZL:J1A7Od;bcPXSc:gSZLJb;VN6jIc:ddQyuf;oUlnpc:RagDlc;CxXAWb:YyRLvc;VGRfx:VFqbr;EABSZ:MXZt9d;DpcR3d:zL72xf;NPKaK:SdcwHb;LBgRLc:XVMNvd,SdcwHb;ZWEUA:afR4Cf;qZx2Fc:j0xrE;lzgfYb:PI40bd;pNsl2d:j9Yuyc;VsAqSb:PGf2Re;R9Ulx:CR7Ufe;kY7VAf:d91TEb;KpRAue:Tia57b;jY0zg:Q6tNgc;coJ8e:KvoW8;oSUNyd:fTfGO,fTfGO,pnvXVc;SMDL4c:fTfGO,pnvXVc;aZ61od:arTwJ;w4rSdf:XKiZ9;h3MYod:cEt90b;eO3lse:nFClrf;zaIgPb:Qtpxbd;HMDDWe:G8QUdb;ShpF6e:N0pvGc;k2Qxcb:XY51pe;IBADCc:RYquRb;pKJiXd:VCenhc;rQSrae:C6D5Fc;kCQyJ:ueyPK;qavrXe:zQzcXe,mYbt1d;TxfV6d:YORN0b;UDrY1c:eps46d;F9mqte:UoRcbe;Nyt6ic:jn2sGd;w3bZCb:ZPGaIb;G0KhTb:LIaoZ;XUezZ:sa7lqb;aAJE9c:WHW6Ef;V2HTTe:RolTY;Wfmdue:g3MJlb;imqimf:jKGL2e;BgS6mb:fidj5d;gtVSi:ekUOYd;KQzWid:ZMKkN;UVmjEd:EesRsb;z97YGf:oug9te;AfeaP:TkrAjf;eBZ5Nd:audvde;OgagBe:cNTe0;SLtqO:Kh1xYe;VOcgDe:YquhTb;uuQkY:u2V3ud;WDGyFe:jcVOxd;trZL0b:qY8PFe;VxQ32b:k0XsBb;DULqB:RKfG5c;Np8Qkd:Dpx6qc;cFTWae:gT8qnd;gaub4:TN6bMe;hjRo6e:F62sG;BjwMce:cXX2Wb;yGxLoc:FmAr0c;pj82le:mg5CW;dLlj2:Qqt3Gf;qGV2uc:HHi04c;R2kc8b:ALJqWb;EnlcNd:WeHg4;Q1Ow7b:x5CSu;okUaUd:wItadb;xbe2wc:wbTLEd;KOxcK:bFOvTc;G6wU6e:hezEbd;uknmt:GkPrzb;U96pRd:FsR04;PqHfGe:im2cZe;heHB1:sFczq;Fmv9Nc:O1Tzwc;hK67qb:QWEO5b;BMxAGc:E5bFse;R4IIIb:QWfeKf;whEZac:F4AmNb;tH4IIe:Ymry6;lkq0A:JyBE3e;daB6be:lMxGPd;LEikZe:byfTOb,lsjVmc/m=attn,cdos,cr,gwc,hsm,jsa,mb4ZUb,d,csi,cEt90b,SNUn3,qddgKe,sTsDMc,dtl0hd,eHDfl:426:204
+
+Dynamically enable window occlusion 1
+1703938992170	geckodriver	INFO	Listening on 127.0.0.1:5345
+1703938992210	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\Admin\\AppData\\Local\\Temp\\rust_mozprofileAHg8lx"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1703938992723	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1703938993062	Marionette	INFO	Listening on port 52448
+Read port: 52448
+1703938993282	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Dec 30, 2023 2:23:14 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.google.com."
+]]></system-err>
+  </testcase>
+  <testcase name="countSearchResult" classname="com.google.tests.N_0005_CountSearchResultTest" time="187.846">
+    <failure message="expected [149] but found [140]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [149] but found [140]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1418)
+	at org.testng.Assert.assertEquals(Assert.java:1382)
+	at org.testng.Assert.assertEquals(Assert.java:1428)
+	at com.google.actionHelpers.CountSearchResult.countAndEqualsSearchResults(CountSearchResult.java:27)
+	at com.google.tests.N_0005_CountSearchResultTest.countSearchResult(N_0005_CountSearchResultTest.java:17)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+]]></failure>
+    <system-out><![CDATA[Trying to find Element By : By.id: ofr
+Trying to find Element By : By.id: ofr
+Before navigating to: 'https://www.google.com/'
+Navigated to:'https://www.google.com/'
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Change value: [[FirefoxDriver: firefox on WINDOWS (0f5566b0-fa52-437a-a408-838a39a21d66)] -> name: q]
+Changed element: [[FirefoxDriver: firefox on WINDOWS (0f5566b0-fa52-437a-a408-838a39a21d66)] -> name: q]
+Trying to find Element By : By.id: Alh6id
+Found Element By : By.id: Alh6id
+Trying to find Element By : By.id: Alh6id
+Found Element By : By.id: Alh6id
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Change value: [[FirefoxDriver: firefox on WINDOWS (0f5566b0-fa52-437a-a408-838a39a21d66)] -> name: q]
+Changed element: [[FirefoxDriver: firefox on WINDOWS (0f5566b0-fa52-437a-a408-838a39a21d66)] -> name: q]
+Trying to find Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div.MjjYud
+Found Element By : By.cssSelector: div.MjjYud
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Found Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to click on: [[EdgeDriver: MicrosoftEdge on WINDOWS (e23c7ed4fbc81b83e5afe3bf7470b8b4)] -> css selector: div > a > h3 > div]
+Clicked on: [[EdgeDriver: MicrosoftEdge on WINDOWS (e23c7ed4fbc81b83e5afe3bf7470b8b4)] -> css selector: div > a > h3 > div]
+Found Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (93dbd17bc6463f961b81beacf677d56b)] -> css selector: div > a > h3 > div]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (93dbd17bc6463f961b81beacf677d56b)] -> css selector: div > a > h3 > div]
+Trying to find Element By : By.id: ofr
+Trying to find Element By : By.id: ofr
+Found Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to click on: [[OperaDriver: opera on WINDOWS (a371b75f2b88f1e54b8c16ef96ab9195)] -> css selector: div > a > h3 > div]
+Clicked on: [[OperaDriver: opera on WINDOWS (a371b75f2b88f1e54b8c16ef96ab9195)] -> css selector: div > a > h3 > div]
+Trying to find Element By : By.id: ofr
+Trying to find Element By : By.id: ofr
+Found Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to click on: [[FirefoxDriver: firefox on WINDOWS (0f5566b0-fa52-437a-a408-838a39a21d66)] -> css selector: div > a > h3 > div]
+Clicked on: [[FirefoxDriver: firefox on WINDOWS (0f5566b0-fa52-437a-a408-838a39a21d66)] -> css selector: div > a > h3 > div]
+Found Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to click on: [[EdgeDriver: MicrosoftEdge on WINDOWS (e23c7ed4fbc81b83e5afe3bf7470b8b4)] -> css selector: div > a > h3 > div]
+Clicked on: [[EdgeDriver: MicrosoftEdge on WINDOWS (e23c7ed4fbc81b83e5afe3bf7470b8b4)] -> css selector: div > a > h3 > div]
+Found Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (93dbd17bc6463f961b81beacf677d56b)] -> css selector: div > a > h3 > div]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (93dbd17bc6463f961b81beacf677d56b)] -> css selector: div > a > h3 > div]
+Trying to find Element By : By.id: ofr
+Trying to find Element By : By.id: ofr
+Found Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to click on: [[OperaDriver: opera on WINDOWS (a371b75f2b88f1e54b8c16ef96ab9195)] -> css selector: div > a > h3 > div]
+Clicked on: [[OperaDriver: opera on WINDOWS (a371b75f2b88f1e54b8c16ef96ab9195)] -> css selector: div > a > h3 > div]
+Trying to find Element By : By.id: ofr
+Trying to find Element By : By.id: ofr
+Found Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to click on: [[FirefoxDriver: firefox on WINDOWS (0f5566b0-fa52-437a-a408-838a39a21d66)] -> css selector: div > a > h3 > div]
+Clicked on: [[FirefoxDriver: firefox on WINDOWS (0f5566b0-fa52-437a-a408-838a39a21d66)] -> css selector: div > a > h3 > div]
+Found Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to click on: [[EdgeDriver: MicrosoftEdge on WINDOWS (e23c7ed4fbc81b83e5afe3bf7470b8b4)] -> css selector: div > a > h3 > div]
+Clicked on: [[EdgeDriver: MicrosoftEdge on WINDOWS (e23c7ed4fbc81b83e5afe3bf7470b8b4)] -> css selector: div > a > h3 > div]
+Found Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (93dbd17bc6463f961b81beacf677d56b)] -> css selector: div > a > h3 > div]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (93dbd17bc6463f961b81beacf677d56b)] -> css selector: div > a > h3 > div]
+Trying to find Element By : By.id: ofr
+Found Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Trying to find Element By : By.id: ofr
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to click on: [[OperaDriver: opera on WINDOWS (a371b75f2b88f1e54b8c16ef96ab9195)] -> css selector: div > a > h3 > div]
+Clicked on: [[OperaDriver: opera on WINDOWS (a371b75f2b88f1e54b8c16ef96ab9195)] -> css selector: div > a > h3 > div]
+Trying to find Element By : By.id: ofr
+Trying to find Element By : By.id: ofr
+Found Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to click on: [[FirefoxDriver: firefox on WINDOWS (0f5566b0-fa52-437a-a408-838a39a21d66)] -> css selector: div > a > h3 > div]
+Clicked on: [[FirefoxDriver: firefox on WINDOWS (0f5566b0-fa52-437a-a408-838a39a21d66)] -> css selector: div > a > h3 > div]
+Found Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to click on: [[EdgeDriver: MicrosoftEdge on WINDOWS (e23c7ed4fbc81b83e5afe3bf7470b8b4)] -> css selector: div > a > h3 > div]
+Clicked on: [[EdgeDriver: MicrosoftEdge on WINDOWS (e23c7ed4fbc81b83e5afe3bf7470b8b4)] -> css selector: div > a > h3 > div]
+Found Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (93dbd17bc6463f961b81beacf677d56b)] -> css selector: div > a > h3 > div]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (93dbd17bc6463f961b81beacf677d56b)] -> css selector: div > a > h3 > div]
+Trying to find Element By : By.id: ofr
+Found Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to find Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to click on: [[OperaDriver: opera on WINDOWS (a371b75f2b88f1e54b8c16ef96ab9195)] -> css selector: div > a > h3 > div]
+Clicked on: [[OperaDriver: opera on WINDOWS (a371b75f2b88f1e54b8c16ef96ab9195)] -> css selector: div > a > h3 > div]
+Trying to find Element By : By.id: ofr
+Trying to find Element By : By.id: ofr
+Found Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to click on: [[FirefoxDriver: firefox on WINDOWS (0f5566b0-fa52-437a-a408-838a39a21d66)] -> css selector: div > a > h3 > div]
+Clicked on: [[FirefoxDriver: firefox on WINDOWS (0f5566b0-fa52-437a-a408-838a39a21d66)] -> css selector: div > a > h3 > div]
+Found Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to click on: [[EdgeDriver: MicrosoftEdge on WINDOWS (e23c7ed4fbc81b83e5afe3bf7470b8b4)] -> css selector: div > a > h3 > div]
+Clicked on: [[EdgeDriver: MicrosoftEdge on WINDOWS (e23c7ed4fbc81b83e5afe3bf7470b8b4)] -> css selector: div > a > h3 > div]
+Found Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (93dbd17bc6463f961b81beacf677d56b)] -> css selector: div > a > h3 > div]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (93dbd17bc6463f961b81beacf677d56b)] -> css selector: div > a > h3 > div]
+Trying to find Element By : By.id: ofr
+Found Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Trying to find Element By : By.id: ofr
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to click on: [[OperaDriver: opera on WINDOWS (a371b75f2b88f1e54b8c16ef96ab9195)] -> css selector: div > a > h3 > div]
+Clicked on: [[OperaDriver: opera on WINDOWS (a371b75f2b88f1e54b8c16ef96ab9195)] -> css selector: div > a > h3 > div]
+Trying to find Element By : By.id: ofr
+Trying to find Element By : By.id: ofr
+Found Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to click on: [[FirefoxDriver: firefox on WINDOWS (0f5566b0-fa52-437a-a408-838a39a21d66)] -> css selector: div > a > h3 > div]
+Clicked on: [[FirefoxDriver: firefox on WINDOWS (0f5566b0-fa52-437a-a408-838a39a21d66)] -> css selector: div > a > h3 > div]
+Found Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to click on: [[EdgeDriver: MicrosoftEdge on WINDOWS (e23c7ed4fbc81b83e5afe3bf7470b8b4)] -> css selector: div > a > h3 > div]
+Clicked on: [[EdgeDriver: MicrosoftEdge on WINDOWS (e23c7ed4fbc81b83e5afe3bf7470b8b4)] -> css selector: div > a > h3 > div]
+Found Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (93dbd17bc6463f961b81beacf677d56b)] -> css selector: div > a > h3 > div]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (93dbd17bc6463f961b81beacf677d56b)] -> css selector: div > a > h3 > div]
+Trying to find Element By : By.id: ofr
+Found Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to click on: [[OperaDriver: opera on WINDOWS (a371b75f2b88f1e54b8c16ef96ab9195)] -> css selector: div > a > h3 > div]
+Trying to find Element By : By.id: ofr
+Clicked on: [[OperaDriver: opera on WINDOWS (a371b75f2b88f1e54b8c16ef96ab9195)] -> css selector: div > a > h3 > div]
+Trying to find Element By : By.id: ofr
+Trying to find Element By : By.id: ofr
+Found Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to click on: [[FirefoxDriver: firefox on WINDOWS (0f5566b0-fa52-437a-a408-838a39a21d66)] -> css selector: div > a > h3 > div]
+Clicked on: [[FirefoxDriver: firefox on WINDOWS (0f5566b0-fa52-437a-a408-838a39a21d66)] -> css selector: div > a > h3 > div]
+Found Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to click on: [[EdgeDriver: MicrosoftEdge on WINDOWS (e23c7ed4fbc81b83e5afe3bf7470b8b4)] -> css selector: div > a > h3 > div]
+Clicked on: [[EdgeDriver: MicrosoftEdge on WINDOWS (e23c7ed4fbc81b83e5afe3bf7470b8b4)] -> css selector: div > a > h3 > div]
+Found Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (93dbd17bc6463f961b81beacf677d56b)] -> css selector: div > a > h3 > div]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (93dbd17bc6463f961b81beacf677d56b)] -> css selector: div > a > h3 > div]
+Trying to find Element By : By.id: ofr
+Found Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to click on: [[OperaDriver: opera on WINDOWS (a371b75f2b88f1e54b8c16ef96ab9195)] -> css selector: div > a > h3 > div]
+Trying to find Element By : By.id: ofr
+Clicked on: [[OperaDriver: opera on WINDOWS (a371b75f2b88f1e54b8c16ef96ab9195)] -> css selector: div > a > h3 > div]
+Trying to find Element By : By.id: ofr
+Trying to find Element By : By.id: ofr
+Found Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to click on: [[FirefoxDriver: firefox on WINDOWS (0f5566b0-fa52-437a-a408-838a39a21d66)] -> css selector: div > a > h3 > div]
+Clicked on: [[FirefoxDriver: firefox on WINDOWS (0f5566b0-fa52-437a-a408-838a39a21d66)] -> css selector: div > a > h3 > div]
+Found Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to click on: [[EdgeDriver: MicrosoftEdge on WINDOWS (e23c7ed4fbc81b83e5afe3bf7470b8b4)] -> css selector: div > a > h3 > div]
+Clicked on: [[EdgeDriver: MicrosoftEdge on WINDOWS (e23c7ed4fbc81b83e5afe3bf7470b8b4)] -> css selector: div > a > h3 > div]
+Found Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (93dbd17bc6463f961b81beacf677d56b)] -> css selector: div > a > h3 > div]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (93dbd17bc6463f961b81beacf677d56b)] -> css selector: div > a > h3 > div]
+Trying to find Element By : By.id: ofr
+Found Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to click on: [[OperaDriver: opera on WINDOWS (a371b75f2b88f1e54b8c16ef96ab9195)] -> css selector: div > a > h3 > div]
+Trying to find Element By : By.id: ofr
+Clicked on: [[OperaDriver: opera on WINDOWS (a371b75f2b88f1e54b8c16ef96ab9195)] -> css selector: div > a > h3 > div]
+Trying to find Element By : By.id: ofr
+Trying to find Element By : By.id: ofr
+Found Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to click on: [[FirefoxDriver: firefox on WINDOWS (0f5566b0-fa52-437a-a408-838a39a21d66)] -> css selector: div > a > h3 > div]
+Clicked on: [[FirefoxDriver: firefox on WINDOWS (0f5566b0-fa52-437a-a408-838a39a21d66)] -> css selector: div > a > h3 > div]
+Found Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to click on: [[EdgeDriver: MicrosoftEdge on WINDOWS (e23c7ed4fbc81b83e5afe3bf7470b8b4)] -> css selector: div > a > h3 > div]
+Clicked on: [[EdgeDriver: MicrosoftEdge on WINDOWS (e23c7ed4fbc81b83e5afe3bf7470b8b4)] -> css selector: div > a > h3 > div]
+Found Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (93dbd17bc6463f961b81beacf677d56b)] -> css selector: div > a > h3 > div]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (93dbd17bc6463f961b81beacf677d56b)] -> css selector: div > a > h3 > div]
+Trying to find Element By : By.id: ofr
+Found Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to click on: [[OperaDriver: opera on WINDOWS (a371b75f2b88f1e54b8c16ef96ab9195)] -> css selector: div > a > h3 > div]
+Trying to find Element By : By.id: ofr
+Clicked on: [[OperaDriver: opera on WINDOWS (a371b75f2b88f1e54b8c16ef96ab9195)] -> css selector: div > a > h3 > div]
+Trying to find Element By : By.id: ofr
+Trying to find Element By : By.id: ofr
+Found Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div.MjjYud
+Found Element By : By.cssSelector: div.MjjYud
+Trying to find Element By : By.cssSelector: div.MjjYud
+Found Element By : By.cssSelector: div.MjjYud
+Found Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to click on: [[FirefoxDriver: firefox on WINDOWS (0f5566b0-fa52-437a-a408-838a39a21d66)] -> css selector: div > a > h3 > div]
+Clicked on: [[FirefoxDriver: firefox on WINDOWS (0f5566b0-fa52-437a-a408-838a39a21d66)] -> css selector: div > a > h3 > div]
+Found Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to click on: [[EdgeDriver: MicrosoftEdge on WINDOWS (e23c7ed4fbc81b83e5afe3bf7470b8b4)] -> css selector: div > a > h3 > div]
+Clicked on: [[EdgeDriver: MicrosoftEdge on WINDOWS (e23c7ed4fbc81b83e5afe3bf7470b8b4)] -> css selector: div > a > h3 > div]
+Trying to find Element By : By.id: ofr
+Found Element By : By.id: ofr
+Trying to find Element By : By.id: ofr
+Found Element By : By.id: ofr
+]]></system-out>
+    <system-err><![CDATA[1703938996216	Marionette	INFO	Stopped listening on port 52448
+Dynamically enable window occlusion 1
+1703938997628	geckodriver	INFO	Listening on 127.0.0.1:30378
+1703938997643	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\Admin\\AppData\\Local\\Temp\\rust_mozprofiletx9Ppp"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1703938998007	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1703938998414	Marionette	INFO	Listening on port 52562
+Read port: 52562
+1703938998621	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Dec 30, 2023 2:23:20 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.google.com."
+1703939029724	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+console.log: "RemoteSettingsWorker error: DataError: IndexedDB: records, timestamps execute() Data provided to an operation does not meet requirements."
+console.error: (new RemoteSettingsWorkerError("DataError: IndexedDB: records, timestamps execute() Data provided to an operation does not meet requirements.", "resource://services-settings/RemoteSettingsWorker.sys.mjs", 34))
+]]></system-err>
+  </testcase>
+  <testcase name="countSearchResult" classname="com.google.tests.N_0005_CountSearchResultTest" time="203.688">
+    <failure message="expected [149] but found [140]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [149] but found [140]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1418)
+	at org.testng.Assert.assertEquals(Assert.java:1382)
+	at org.testng.Assert.assertEquals(Assert.java:1428)
+	at com.google.actionHelpers.CountSearchResult.countAndEqualsSearchResults(CountSearchResult.java:27)
+	at com.google.tests.N_0005_CountSearchResultTest.countSearchResult(N_0005_CountSearchResultTest.java:17)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+]]></failure>
+    <system-out><![CDATA[Found Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (93dbd17bc6463f961b81beacf677d56b)] -> css selector: div > a > h3 > div]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (93dbd17bc6463f961b81beacf677d56b)] -> css selector: div > a > h3 > div]
+Trying to find Element By : By.id: ofr
+Found Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div.MjjYud
+Found Element By : By.cssSelector: div.MjjYud
+Trying to find Element By : By.cssSelector: div.MjjYud
+Found Element By : By.cssSelector: div.MjjYud
+Trying to find Element By : By.id: ofr
+Trying to find Element By : By.id: ofr
+Trying to find Element By : By.id: ofr
+Found Element By : By.id: ofr
+Trying to find Element By : By.id: ofr
+Found Element By : By.id: ofr
+]]></system-out>
+  </testcase>
+  <testcase name="countSearchResult" classname="com.google.tests.N_0005_CountSearchResultTest" time="345.454">
+    <failure message="expected [230] but found [211]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [230] but found [211]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1418)
+	at org.testng.Assert.assertEquals(Assert.java:1382)
+	at org.testng.Assert.assertEquals(Assert.java:1428)
+	at com.google.actionHelpers.CountSearchResult.countAndEqualsSearchResults(CountSearchResult.java:27)
+	at com.google.tests.N_0005_CountSearchResultTest.countSearchResult(N_0005_CountSearchResultTest.java:17)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+]]></failure>
+    <system-out><![CDATA[Found Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to click on: [[EdgeDriver: MicrosoftEdge on WINDOWS (e23c7ed4fbc81b83e5afe3bf7470b8b4)] -> css selector: div > a > h3 > div]
+Clicked on: [[EdgeDriver: MicrosoftEdge on WINDOWS (e23c7ed4fbc81b83e5afe3bf7470b8b4)] -> css selector: div > a > h3 > div]
+Found Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (93dbd17bc6463f961b81beacf677d56b)] -> css selector: div > a > h3 > div]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (93dbd17bc6463f961b81beacf677d56b)] -> css selector: div > a > h3 > div]
+Trying to find Element By : By.id: ofr
+Trying to find Element By : By.id: ofr
+Found Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to click on: [[EdgeDriver: MicrosoftEdge on WINDOWS (e23c7ed4fbc81b83e5afe3bf7470b8b4)] -> css selector: div > a > h3 > div]
+Clicked on: [[EdgeDriver: MicrosoftEdge on WINDOWS (e23c7ed4fbc81b83e5afe3bf7470b8b4)] -> css selector: div > a > h3 > div]
+Found Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (93dbd17bc6463f961b81beacf677d56b)] -> css selector: div > a > h3 > div]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (93dbd17bc6463f961b81beacf677d56b)] -> css selector: div > a > h3 > div]
+Trying to find Element By : By.id: ofr
+Trying to find Element By : By.id: ofr
+Found Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to click on: [[EdgeDriver: MicrosoftEdge on WINDOWS (e23c7ed4fbc81b83e5afe3bf7470b8b4)] -> css selector: div > a > h3 > div]
+Clicked on: [[EdgeDriver: MicrosoftEdge on WINDOWS (e23c7ed4fbc81b83e5afe3bf7470b8b4)] -> css selector: div > a > h3 > div]
+Found Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (93dbd17bc6463f961b81beacf677d56b)] -> css selector: div > a > h3 > div]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (93dbd17bc6463f961b81beacf677d56b)] -> css selector: div > a > h3 > div]
+Trying to find Element By : By.id: ofr
+Trying to find Element By : By.id: ofr
+Found Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to click on: [[EdgeDriver: MicrosoftEdge on WINDOWS (e23c7ed4fbc81b83e5afe3bf7470b8b4)] -> css selector: div > a > h3 > div]
+Clicked on: [[EdgeDriver: MicrosoftEdge on WINDOWS (e23c7ed4fbc81b83e5afe3bf7470b8b4)] -> css selector: div > a > h3 > div]
+Found Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (93dbd17bc6463f961b81beacf677d56b)] -> css selector: div > a > h3 > div]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (93dbd17bc6463f961b81beacf677d56b)] -> css selector: div > a > h3 > div]
+Trying to find Element By : By.id: ofr
+Trying to find Element By : By.id: ofr
+Found Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to click on: [[EdgeDriver: MicrosoftEdge on WINDOWS (e23c7ed4fbc81b83e5afe3bf7470b8b4)] -> css selector: div > a > h3 > div]
+Clicked on: [[EdgeDriver: MicrosoftEdge on WINDOWS (e23c7ed4fbc81b83e5afe3bf7470b8b4)] -> css selector: div > a > h3 > div]
+Found Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (93dbd17bc6463f961b81beacf677d56b)] -> css selector: div > a > h3 > div]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (93dbd17bc6463f961b81beacf677d56b)] -> css selector: div > a > h3 > div]
+Trying to find Element By : By.id: ofr
+Trying to find Element By : By.id: ofr
+Found Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to click on: [[EdgeDriver: MicrosoftEdge on WINDOWS (e23c7ed4fbc81b83e5afe3bf7470b8b4)] -> css selector: div > a > h3 > div]
+Clicked on: [[EdgeDriver: MicrosoftEdge on WINDOWS (e23c7ed4fbc81b83e5afe3bf7470b8b4)] -> css selector: div > a > h3 > div]
+Found Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (93dbd17bc6463f961b81beacf677d56b)] -> css selector: div > a > h3 > div]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (93dbd17bc6463f961b81beacf677d56b)] -> css selector: div > a > h3 > div]
+Trying to find Element By : By.id: ofr
+Trying to find Element By : By.id: ofr
+Found Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to click on: [[EdgeDriver: MicrosoftEdge on WINDOWS (e23c7ed4fbc81b83e5afe3bf7470b8b4)] -> css selector: div > a > h3 > div]
+Clicked on: [[EdgeDriver: MicrosoftEdge on WINDOWS (e23c7ed4fbc81b83e5afe3bf7470b8b4)] -> css selector: div > a > h3 > div]
+Found Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to find Element By : By.cssSelector: div > a > h3 > div
+Found Element By : By.cssSelector: div > a > h3 > div
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (93dbd17bc6463f961b81beacf677d56b)] -> css selector: div > a > h3 > div]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (93dbd17bc6463f961b81beacf677d56b)] -> css selector: div > a > h3 > div]
+Trying to find Element By : By.id: ofr
+Found Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div.MjjYud
+Found Element By : By.cssSelector: div.MjjYud
+Trying to find Element By : By.cssSelector: div.MjjYud
+Found Element By : By.cssSelector: div.MjjYud
+Trying to find Element By : By.id: ofr
+Found Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: div.MjjYud
+Found Element By : By.cssSelector: div.MjjYud
+Trying to find Element By : By.cssSelector: div.MjjYud
+Found Element By : By.cssSelector: div.MjjYud
+Trying to find Element By : By.id: ofr
+Found Element By : By.id: ofr
+Trying to find Element By : By.id: ofr
+Found Element By : By.id: ofr
+]]></system-out>
+    <system-err><![CDATA[1703939203927	Marionette	INFO	Stopped listening on port 52562
+JavaScript warning: https://www.youtube.com/s/player/da154528/player_ias.vflset/en_US/base.js, line 1921: Script terminated by timeout at:
+g.OB/<@https://www.youtube.com/s/player/da154528/player_ias.vflset/en_US/base.js:1921:49
+
+Dynamically enable window occlusion 1
+
+###!!! [Parent][DispatchAsyncMessage] Error: PBackgroundIDBDatabase::Msg_PBackgroundIDBTransactionConstructor Value error: message was deserialized, but contained an illegal value
+
+]]></system-err>
+  </testcase>
+  <testcase name="countSearchResult" classname="com.google.tests.N_0005_CountSearchResultTest" time="345.961">
+    <failure message="expected [230] but found [209]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [230] but found [209]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1418)
+	at org.testng.Assert.assertEquals(Assert.java:1382)
+	at org.testng.Assert.assertEquals(Assert.java:1428)
+	at com.google.actionHelpers.CountSearchResult.countAndEqualsSearchResults(CountSearchResult.java:27)
+	at com.google.tests.N_0005_CountSearchResultTest.countSearchResult(N_0005_CountSearchResultTest.java:17)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+]]></failure>
+    <system-out><![CDATA[Trying to find Element By : By.id: ofr
+Found Element By : By.id: ofr
+Trying to find Element By : By.id: ofr
+Found Element By : By.id: ofr
+]]></system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="All-tests [Edge]"
+           tests="2"
+           failures="1"
+           errors="0"
+           skipped="1"
+           time="0.003">
+  <properties />
+            <testcase name="setUpDriver" time="0.003" classname="com.google.tests.N_0005_CountSearchResultTest">
+                <failure type="java.lang.IllegalStateException"
+                  message="The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/MicrosoftWebDriver. The latest version can be downloaded from http://go.microsoft.com/fwlink/?LinkId=619687"
+              >
+<![CDATA[java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/MicrosoftWebDriver. The latest version can be downloaded from http://go.microsoft.com/fwlink/?LinkId=619687
+  com.google.common.base.Preconditions.checkState(Preconditions.java:847)
+  org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
+  org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:37)
+  org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:90)
+  org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+  org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)
+  org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:96)
+  com.google.utils.DriverFactory.initDriver(DriverFactory.java:54)
+  com.google.tests.BaseTest.setUpDriver(BaseTest.java:38)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  java.base/java.lang.reflect.Method.invoke(Method.java:580)
+  org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+  org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+  org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+  org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+  org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+  org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+  org.testng.TestRunner.privateRun(TestRunner.java:829)
+  org.testng.TestRunner.run(TestRunner.java:602)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+  org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+  java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+  java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+  java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+  java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+      </failure>
+
+          </testcase>
+  
+            <testcase name="countSearchResult" time="0.0" classname="com.google.tests.N_0005_CountSearchResultTest">
+          <skipped />
+    </testcase>
+  
+  
+</testsuite>

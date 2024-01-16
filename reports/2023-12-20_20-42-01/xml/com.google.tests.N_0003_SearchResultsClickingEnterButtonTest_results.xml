@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="All-tests [Firefox]"
+           tests="2"
+           failures="1"
+           errors="0"
+           skipped="1"
+           time="33.257">
+  <properties />
+            <testcase name="searchResultsClickingEnterButton" time="16.325" classname="com.google.tests.N_0003_SearchResultsClickingEnterButtonTest">
+                <failure type="java.lang.AssertionError"
+                  message="Element isn&apos;t present on the page expected [true] but found [false]"
+              >
+<![CDATA[java.lang.AssertionError: Element isn't present on the page expected [true] but found [false]
+  org.testng.Assert.fail(Assert.java:110)
+  org.testng.Assert.failNotEquals(Assert.java:1577)
+  org.testng.Assert.assertTrue(Assert.java:56)
+  com.google.pages.GoogleMainPage.clickEnterButton(GoogleMainPage.java:42)
+  com.google.tests.N_0003_SearchResultsClickingEnterButtonTest.searchResultsClickingEnterButton(N_0003_SearchResultsClickingEnterButtonTest.java:15)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  java.base/java.lang.reflect.Method.invoke(Method.java:580)
+  org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+  org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+  org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+  org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+  org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+  org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+  org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+  org.testng.TestRunner.privateRun(TestRunner.java:829)
+  org.testng.TestRunner.run(TestRunner.java:602)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+  org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+  java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+  java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+  java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+  java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+      </failure>
+
+          </testcase>
+  
+            <testcase name="searchResultsClickingEnterButton" time="0.0" classname="com.google.tests.N_0003_SearchResultsClickingEnterButtonTest">
+          <skipped />
+    </testcase>
+  
+  
+</testsuite>
